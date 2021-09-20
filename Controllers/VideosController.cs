@@ -74,7 +74,7 @@ namespace JAP_Task_Backend.Controllers
         [HttpGet("top-ten-movies-by-screenings")]
         public IActionResult GetTopTenMoviesByScreenings(DateTime startDate, DateTime endDate)
         {
-            return Ok();
+            return Ok(_videoService.GetTopTenMoviesByScreenings(startDate, endDate));
         }
 
         [HttpPost("insert-screening-data")]

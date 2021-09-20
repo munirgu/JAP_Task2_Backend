@@ -233,6 +233,15 @@ namespace JAP_Task_Backend.Services
             return result;
         }
 
+        public List<TopTenMoviesByScreenings> GetTopTenMoviesByScreenings(DateTime startDate, DateTime endDate)
+        {
+            List<TopTenMoviesByScreenings> result = _context.TopTenMoviesByScreenings
+                .FromSqlRaw("EXEC [dbo].[GetTopTenMoviesByScreenings] @StartDate={0}, @EndDate={1}", startDate, endDate)
+                .ToList();
+
+            return result;
+        }
+
         public void InsertScreeningData()
         {
             if (_context.Screenings.Any()) return;
