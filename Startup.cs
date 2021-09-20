@@ -34,7 +34,7 @@ namespace JAP_Task_Backend
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "JAP_Task_Backend", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "JAP_Task2_Backend", Version = "v1" });
             });
 
                   
@@ -51,7 +51,7 @@ namespace JAP_Task_Backend
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "JAP_Task_Backend v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "JAP_Task2_Backend v1"));
             }
 
             app.UseHttpsRedirection();
