@@ -187,6 +187,16 @@ namespace JAP_Task_Backend.Database
                             ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
 
                         },
+                        new Video
+                        {
+                            Id = 31,
+                            Title = "Spider",
+                            Description = "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(2012, 4, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+
+                        },
 
 
 
