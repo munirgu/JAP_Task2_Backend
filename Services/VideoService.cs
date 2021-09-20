@@ -16,6 +16,8 @@ namespace JAP_Task_Backend.Services
         private readonly ApplicationDbContext _context;
         private const int pageSize = 10;
 
+        private readonly Random _random = new Random();
+
         public VideoService(ApplicationDbContext context)
         {
             _context = context;
@@ -199,6 +201,29 @@ namespace JAP_Task_Backend.Services
             _context.SaveChanges();
         }
 
+        public void BuyTicket(int screeningId, int numberOfTickets)
+        {
+            var screening = _context.Screenings.FirstOrDefault(x => x.Id == screeningId);
+            if (screening == null)
+            {
+                throw new Exception("Screening doesn't exist.");
+            }
+
+            if (screening.AvailableTickets < numberOfTickets)
+            {
+                throw new Exception("Not enough tickets available.");
+            }
+
+            if (screening.DateAndTime < DateTime.Now)
+            {
+                throw new Exception("You can't buy tickets for past screenings.");
+            }
+
+            screening.AvailableTickets = screening.AvailableTickets - numberOfTickets;
+            screening.SoldTickets = screening.SoldTickets + numberOfTickets;
+            _context.SaveChanges();
+        }
+
         public List<TopTenMoviesByRatings> GetTopTenMoviesByRatings()
         {
             List<TopTenMoviesByRatings> result = _context.TopTenMoviesByRatings
@@ -206,6 +231,40 @@ namespace JAP_Task_Backend.Services
                 .ToList();
 
             return result;
+        }
+
+        public void InsertScreeningData()
+        {
+            if (_context.Screenings.Any()) return;
+
+            var movies = _context.Videos
+                .Where(w => w.Type == VideoType.Movie)
+                .ToList();
+
+            foreach (var movie in movies)
+            {
+                // Add screening for each movie for next 10 days
+                for (int day = 0; day < 10; day++)
+                {
+                    var screeningPerDay = _random.Next(1, 5);
+                    // Add up to 5 screenings per day
+                    for (int i = 0; i < screeningPerDay; i++)
+                    {
+                        var screening = new Screening()
+                        {
+                            Video = movie,
+                            DateAndTime = DateTime.Now.Date.AddDays(day),
+                            AvailableTickets = 20,
+                            SoldTickets = 0
+                        };
+
+                        screening.DateAndTime = screening.DateAndTime.AddHours(_random.Next(17, 23));
+                        _context.Screenings.Add(screening);
+                    }
+                }
+            }
+
+            _context.SaveChanges();
         }
     }
 

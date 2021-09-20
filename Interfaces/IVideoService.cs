@@ -13,6 +13,12 @@ namespace JAP_Task_Backend.Interfaces
         List<VideoDto> GetTopTenVideos(VideoType videoType, int currentPage);
         List<VideoDto> SearchMovies(VideoType videoType,string quickSearch);
         void RateVideo(int id, int score);
+        void BuyTicket(int screeningId, int numberOfTickets);
+
+        // Procedures
         List<TopTenMoviesByRatings> GetTopTenMoviesByRatings();
+
+        // Test data
+        void InsertScreeningData();
     }
 }

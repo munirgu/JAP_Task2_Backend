@@ -58,12 +58,31 @@ namespace JAP_Task_Backend.Controllers
             return Ok();
         }
 
+        [HttpPost("buy-ticket")]
+        public IActionResult BuyTicket(int screeningId, int numberOfTickets)
+        {
+            _videoService.BuyTicket(screeningId, numberOfTickets);
+            return Ok();
+        }
+
         [HttpGet("top-ten-movies-by-ratings")]
         public IActionResult GetTopTenMoviesByRatings()
         {
             return Ok(_videoService.GetTopTenMoviesByRatings());
         }
-       
+
+        [HttpGet("top-ten-movies-by-screenings")]
+        public IActionResult GetTopTenMoviesByScreenings(DateTime startDate, DateTime endDate)
+        {
+            return Ok();
+        }
+
+        [HttpPost("insert-screening-data")]
+        public IActionResult InsertScreeningData()
+        {
+            _videoService.InsertScreeningData();
+            return Ok();
+        }
     }
 }
 

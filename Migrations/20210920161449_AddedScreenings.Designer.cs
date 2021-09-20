@@ -4,14 +4,16 @@ using JAP_Task_Backend.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace JAP_Task_Backend.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210920161449_AddedScreenings")]
+    partial class AddedScreenings
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -408,14 +410,8 @@ namespace JAP_Task_Backend.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("AvailableTickets")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("DateAndTime")
                         .HasColumnType("datetime2");
-
-                    b.Property<int>("SoldTickets")
-                        .HasColumnType("int");
 
                     b.Property<int>("VideoId")
                         .HasColumnType("int");
