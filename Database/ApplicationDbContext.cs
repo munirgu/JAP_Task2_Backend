@@ -18,6 +18,9 @@ namespace JAP_Task_Backend.Database
 
         public DbSet<Rating> Ratings { get; set; }
 
+        public DbSet<TopTenMoviesByRatings> TopTenMoviesByRatings { get; set; }
+
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -494,16 +497,12 @@ namespace JAP_Task_Backend.Database
                 new Rating { Id = 59, Score = 3, VideoId = 30 },
                 new Rating { Id = 60, Score = 3, VideoId = 30 }
 
-
-
-
-
             );
             #endregion
 
 
 
-
+            modelBuilder.Entity<TopTenMoviesByRatings>().HasNoKey();
         }
 
     }

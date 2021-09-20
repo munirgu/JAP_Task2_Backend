@@ -5,11 +5,14 @@ using System.Threading.Tasks;
 
 namespace JAP_Task_Backend.Models
 {
-    public class VideoActor
+    public class Screening
     {
-        public int Id { get; set; }
+
         public int VideoId { get; set; }
-        public Video Video { get; set; }
-        public string Name { get; set; }
+        public string Title { get; set; }
+        public int NumberOfScreenings { get; set; }
+
     }
 }
+
+

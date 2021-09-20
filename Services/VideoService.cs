@@ -3,9 +3,11 @@ using JAP_Task_Backend.DTO;
 using JAP_Task_Backend.Enums;
 using JAP_Task_Backend.Interfaces;
 using JAP_Task_Backend.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace JAP_Task_Backend.Services
 {
@@ -197,6 +199,14 @@ namespace JAP_Task_Backend.Services
             _context.SaveChanges();
         }
 
+        public List<TopTenMoviesByRatings> GetTopTenMoviesByRatings()
+        {
+            List<TopTenMoviesByRatings> result = _context.TopTenMoviesByRatings
+                .FromSqlRaw("EXEC [dbo].[GetTopTenMovies]")
+                .ToList();
+
+            return result;
+        }
     }
 
 

@@ -57,6 +57,13 @@ namespace JAP_Task_Backend.Controllers
             _videoService.RateVideo(id, score);
             return Ok();
         }
+
+        [HttpGet("top-ten-movies-by-ratings")]
+        public IActionResult GetTopTenMoviesByRatings()
+        {
+            return Ok(_videoService.GetTopTenMoviesByRatings());
+        }
+       
     }
 }
 

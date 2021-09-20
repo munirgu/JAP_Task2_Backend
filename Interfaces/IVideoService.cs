@@ -13,5 +13,6 @@ namespace JAP_Task_Backend.Interfaces
         List<VideoDto> GetTopTenVideos(VideoType videoType, int currentPage);
         List<VideoDto> SearchMovies(VideoType videoType,string quickSearch);
         void RateVideo(int id, int score);
+        List<TopTenMoviesByRatings> GetTopTenMoviesByRatings();
     }
 }

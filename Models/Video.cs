@@ -19,7 +19,8 @@ namespace JAP_Task_Backend.Models
 
         public List<VideoActor> Actors { get; set; }
         public List<Rating> Ratings { get; set; }
+    
 
-        
+
     }
 }
