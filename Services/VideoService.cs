@@ -242,6 +242,14 @@ namespace JAP_Task_Backend.Services
             return result;
         }
 
+        public List<TopMoviesByMostSoldTickets> GetTopMoviesByMostSoldTickets()
+        {
+            List<TopMoviesByMostSoldTickets> result = _context.TopMoviesByMostSoldTickets
+                .FromSqlRaw("EXEC [dbo].[GetTopMoviesByMostSoldTickets]")
+                .ToList();
+
+            return result;
+        }
         public void InsertScreeningData()
         {
             if (_context.Screenings.Any()) return;

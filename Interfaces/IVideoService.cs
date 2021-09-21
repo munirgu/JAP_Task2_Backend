@@ -18,6 +18,7 @@ namespace JAP_Task_Backend.Interfaces
         // Procedures
         List<TopTenMoviesByRatings> GetTopTenMoviesByRatings();
         List<TopTenMoviesByScreenings> GetTopTenMoviesByScreenings(DateTime startDate, DateTime endDate);
+        List<TopMoviesByMostSoldTickets> GetTopMoviesByMostSoldTickets();
 
         // Test data
         void InsertScreeningData();

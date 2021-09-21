@@ -20,6 +20,7 @@ namespace JAP_Task_Backend.Database
 
         public DbSet<TopTenMoviesByRatings> TopTenMoviesByRatings { get; set; }
         public DbSet<TopTenMoviesByScreenings> TopTenMoviesByScreenings { get; set; }
+        public DbSet<TopMoviesByMostSoldTickets> TopMoviesByMostSoldTickets { get; set; }
         public DbSet<Screening> Screenings { get; set; }
 
 
@@ -769,6 +770,7 @@ namespace JAP_Task_Backend.Database
 
             modelBuilder.Entity<TopTenMoviesByRatings>().HasNoKey().ToView("TopTenMoviesByRatings");
             modelBuilder.Entity<TopTenMoviesByScreenings>().HasNoKey().ToView("TopTenMoviesByScreenings");
+            modelBuilder.Entity<TopMoviesByMostSoldTickets>().HasNoKey().ToView("TopMoviesByMostSoldTickets");
         }
 
     }

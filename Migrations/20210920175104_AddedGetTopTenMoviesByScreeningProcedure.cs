@@ -14,8 +14,8 @@ namespace JAP_Task_Backend.Migrations
                 CREATE OR ALTER PROCEDURE GetTopTenMoviesByScreenings
 	            @StartDate date,
 	            @EndDate date
-                    AS
-                    BEGIN
+                AS
+                BEGIN
 
 	            SELECT TOP(10) v.Id, v.Title, Count(s.Id) AS ScreeningsCount
 	            FROM Videos v

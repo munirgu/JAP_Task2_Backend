@@ -77,6 +77,13 @@ namespace JAP_Task_Backend.Controllers
             return Ok(_videoService.GetTopTenMoviesByScreenings(startDate, endDate));
         }
 
+        [HttpGet("top-movies-by-most-sold-tickets")]
+        public IActionResult GetTopMoviesByMostSoldTickets()
+        {
+            return Ok(_videoService.GetTopMoviesByMostSoldTickets());
+        }
+
+
         [HttpPost("insert-screening-data")]
         public IActionResult InsertScreeningData()
         {
