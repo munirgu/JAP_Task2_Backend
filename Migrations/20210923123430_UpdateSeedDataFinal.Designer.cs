@@ -4,14 +4,16 @@ using JAP_Task_Backend.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace JAP_Task_Backend.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210923123430_UpdateSeedDataFinal")]
+    partial class UpdateSeedDataFinal
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -720,18 +722,78 @@ namespace JAP_Task_Backend.Migrations
                         new
                         {
                             Id = 144,
-                            Score = 0,
-                            VideoId = 46
+                            Score = 2,
+                            VideoId = 50
                         },
                         new
                         {
                             Id = 145,
                             Score = 0,
-                            VideoId = 47
+                            VideoId = 51
                         },
                         new
                         {
                             Id = 146,
+                            Score = 0,
+                            VideoId = 52
+                        },
+                        new
+                        {
+                            Id = 147,
+                            Score = 0,
+                            VideoId = 53
+                        },
+                        new
+                        {
+                            Id = 148,
+                            Score = 0,
+                            VideoId = 54
+                        },
+                        new
+                        {
+                            Id = 149,
+                            Score = 0,
+                            VideoId = 55
+                        },
+                        new
+                        {
+                            Id = 150,
+                            Score = 0,
+                            VideoId = 56
+                        },
+                        new
+                        {
+                            Id = 151,
+                            Score = 0,
+                            VideoId = 57
+                        },
+                        new
+                        {
+                            Id = 152,
+                            Score = 0,
+                            VideoId = 58
+                        },
+                        new
+                        {
+                            Id = 153,
+                            Score = 0,
+                            VideoId = 59
+                        },
+                        new
+                        {
+                            Id = 154,
+                            Score = 0,
+                            VideoId = 46
+                        },
+                        new
+                        {
+                            Id = 155,
+                            Score = 0,
+                            VideoId = 47
+                        },
+                        new
+                        {
+                            Id = 156,
                             Score = 0,
                             VideoId = 45
                         },

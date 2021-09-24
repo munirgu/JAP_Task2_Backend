@@ -13,11 +13,8 @@ namespace JAP_Task_Backend.Database
 
         }
         public DbSet<Video> Videos { get; set; }
-
         public DbSet<VideoActor> VideoActors { get; set; }
-
         public DbSet<Rating> Ratings { get; set; }
-
         public DbSet<TopTenMoviesByRatings> TopTenMoviesByRatings { get; set; }
         public DbSet<TopTenMoviesByScreenings> TopTenMoviesByScreenings { get; set; }
         public DbSet<TopMoviesByMostSoldTickets> TopMoviesByMostSoldTickets { get; set; }
@@ -196,15 +193,782 @@ namespace JAP_Task_Backend.Database
                         new Video
                         {
                             Id = 31,
-                            Title = "Spider",
+                            Title = "Spider 2",
+                            Description = "Famous movie, first time displayed in 2003",
+                            ReleaseDate = new DateTime(2003, 10, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+
+                        },
+                        new Video
+                        {
+                            Id = 32,
+                            Title = "The Godfather 4",
+                            Description = "An organized crime dynasty's aging patriarch transfers control of his clandestine empire to his reluctant son.",
+                            ReleaseDate = new DateTime(1972, 3, 24),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+
+                        },
+                        new Video
+                        {
+                            Id = 33,
+                            Title = "The Dark Knight 4",
+                            Description = "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+                            ReleaseDate = new DateTime(2008, 7, 18),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+
+                        },
+                        new Video
+                        {
+                            Id = 34,
+                            Title = "Band of Brothers",
+                            Description = "The story of Easy Company of the U.S. Army 101st Airborne Division and their mission in World War II Europe, from Operation Overlord to V-J Day.",
+                            ReleaseDate = new DateTime(2001, 9, 9),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+
+                        },
+                        new Video
+                        {
+                            Id = 35,
+                            Title = "Chernobyl",
+                            Description = "In April 1986, an explosion at the Chernobyl nuclear power plant in the Union of Soviet Socialist Republics becomes one of the world's worst man-made catastrophes.",
+                            ReleaseDate = new DateTime(1986, 4, 26),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+
+                        },
+                        new Video
+                        {
+                            Id = 36,
+                            Title = "Blue Planet II",
+                            Description = "David Attenborough returns to the world's oceans in this sequel to the acclaimed documentary filming rare and unusual creatures of the deep, as well as documenting the problems our oceans face.",
+                            ReleaseDate = new DateTime(2017, 4, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+
+                        },
+                        new Video
+                        {
+                            Id = 37,
+                            Title = "Our Planet",
+                            Description = "Documentary series focusing on the breadth of the diversity of habitats around the world, from the remote Arctic wilderness and mysterious deep oceans to the vast landscapes of Africa and diverse jungles of South America.",
+                            ReleaseDate = new DateTime(2019, 4, 5),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+
+                        },
+                        new Video
+                        {
+                            Id = 38,
+                            Title = "Cosmos",
                             Description = "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
                             ReleaseDate = new DateTime(2012, 4, 12),
                             Type = VideoType.Movie,
                             ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
 
                         },
+                        new Video
+                        {
+                            Id = 39,
+                            Title = "Spider",
+                            Description = "Astronomer Carl Sagan leads us on an engaging guided tour of the various elements and cosmological theories of the universe.",
+                            ReleaseDate = new DateTime(2016, 8, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
 
+                        },
+                        new Video
+                        {
+                            Id = 40,
+                            Title = "The Shawshank Redemption 2",
+                            Description = "The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.",
+                            ReleaseDate = new DateTime(2018, 5, 10),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
 
+                        },
+                        new Video
+                        {
+                            Id = 41,
+                            Title = "12 Angry Men 3",
+                            Description = "A jury holdout attempts to prevent a miscarriage of justice by forcing his colleagues to reconsider the evidence.",
+                            ReleaseDate = new DateTime(2013, 10, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+
+                        },
+                        new Video
+                        {
+                            Id = 42,
+                            Title = "Schindler's List 3",
+                            Description = "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+                            ReleaseDate = new DateTime(2004, 3, 2),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+
+                        },
+                        new Video
+                        {
+                            Id = 43,
+                            Title = "The Lord of the Rings: The Fellowship of the Ring 3",
+                            Description = "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+                            ReleaseDate = new DateTime(2011, 10, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 44,
+                            Title = "Pulp Fiction 4",
+                            Description = "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+                            ReleaseDate = new DateTime(2020, 4, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 45,
+                            Title = "Fight Club 4",
+                            Description = "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
+                            ReleaseDate = new DateTime(1999, 4, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 46,
+                            Title = "Spider 5",
+                            Description = "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(2019, 4, 11),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 47,
+                            Title = "Forrest Gump 4",
+                            Description = "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
+                            ReleaseDate = new DateTime(2012, 4, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 48,
+                            Title = "Fight Club 5",
+                            Description = "An office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
+                            ReleaseDate = new DateTime(1999, 4, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 49,
+                            Title = "Fight Club 6",
+                            Description = "An worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
+                            ReleaseDate = new DateTime(1999, 4, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 50,
+                            Title = "The Shawshank Redemption 5",
+                            Description = "Life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.",
+                            ReleaseDate = new DateTime(2011, 5, 11),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+
+                        },
+                        new Video
+                        {
+                            Id = 51,
+                            Title = "Fight Club 6",
+                            Description = "An office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
+                            ReleaseDate = new DateTime(2001, 4, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 52,
+                            Title = "Forrest Gump 4",
+                            Description = "The Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
+                            ReleaseDate = new DateTime(2013, 1, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 53,
+                            Title = "Fight Club 7",
+                            Description = "An office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
+                            ReleaseDate = new DateTime(2005, 10, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 54,
+                            Title = "Spider 9",
+                            Description = "High school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(2019, 2, 11),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 55,
+                            Title = "Star Wars: A New Hope (Episode IV)",
+                            Description = "After Princess Leia, the leader of the Rebel Alliance, is held hostage by Darth Vader, Luke and Han Solo must free her and destroy the powerful weapon created by the Galactic Empire.",
+                            ReleaseDate = new DateTime(2009, 4, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 56,
+                            Title = "Star Wars: A New Hope (Episode V)",
+                            Description = "Luke and Han Solo must free Leilas and destroy the powerful weapon created by the Galactic Empire.",
+                            ReleaseDate = new DateTime(2011, 4, 5),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 57,
+                            Title = "Star Wars: A New Hope (Episode VI)",
+                            Description = "Luke and Han Solo must free Leilas and destroy the powerful weapon created by the Galactic Empire.",
+                            ReleaseDate = new DateTime(2013, 10, 5),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 58,
+                            Title = "Star Wars: A New Hope (Episode VII)",
+                            Description = "Luke and Han Solo must free Leilas and destroy the powerful weapon created by the Galactic Empire.",
+                            ReleaseDate = new DateTime(2014, 11, 11),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 59,
+                            Title = "Star Wars: A New Hope (Episode VIII)",
+                            Description = "Luke and Han Solo must free Leilas and destroy the powerful weapon created by the Galactic Empire.",
+                            ReleaseDate = new DateTime(2015, 4, 5),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 60,
+                            Title = "Avatar",
+                            Description = "Jake, who is paraplegic, replaces his twin on the Na'vi inhabited Pandora for a corporate mission. After the natives accept him as one of their own, he must decide where his loyalties lie.",
+                            ReleaseDate = new DateTime(2009, 11, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 61,
+                            Title = "Avatar 1",
+                            Description = "Jake, who is paraplegic, replaces his twin on the Na'vi inhabited Pandora for a corporate mission. After the natives accept him as one of their own, he must decide where his loyalties lie.",
+                            ReleaseDate = new DateTime(2010, 11, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 62,
+                            Title = "Avatar 2",
+                            Description = "Jake, who is paraplegic, replaces his twin on the Na'vi inhabited Pandora for a corporate mission. After the natives accept him as one of their own, he must decide where his loyalties lie.",
+                            ReleaseDate = new DateTime(2011, 11, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 63,
+                            Title = "Avatar 3",
+                            Description = "Jake, who is paraplegic, replaces his twin on the Na'vi inhabited Pandora for a corporate mission. After the natives accept him as one of their own, he must decide where his loyalties lie.",
+                            ReleaseDate = new DateTime(2012, 11, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 64,
+                            Title = "Harry Potter and the Philosopher's Stone",
+                            Description = "Harry Potter, an eleven-year-old orphan, discovers that he is a wizard and is invited to study at Hogwarts. Even as he escapes a dreary life and enters a world of magic, he finds trouble awaiting him.",
+                            ReleaseDate = new DateTime(1999, 8, 8),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 65,
+                            Title = "Harry Potter and The Chamber Of Secrets",
+                            Description = "An eleven-year-old orphan, discovers that he is a wizard and is invited to study at Hogwarts. Even as he escapes a dreary life and enters a world of magic, he finds trouble awaiting him.",
+                            ReleaseDate = new DateTime(2012, 4, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 66,
+                            Title = "Shang-Chi and the Legend of the Ten Rings",
+                            Description = "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
+                            ReleaseDate = new DateTime(2003, 10, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 67,
+                            Title = "Don't Breathe 2",
+                            Description = "The Blind Man has been hiding out for several years in an isolated cabin and has taken in and raised a young girl orphaned from a devastating house fire. Their quiet life together is shattered when a group of criminals kidnap the girl.",
+                            ReleaseDate = new DateTime(2017, 4, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 68,
+                            Title = "Don't Breathe 3",
+                            Description = "The Blind Man has been hiding out for several years in an isolated cabin and has taken in and raised a young girl orphaned from a devastating house fire. Their quiet life together is shattered when a group of criminals kidnap the girl.",
+                            ReleaseDate = new DateTime(2018, 5, 9),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 69,
+                            Title = "Don't Breathe 4",
+                            Description = "The Blind Man has been hiding out for several years in an isolated cabin and has taken in and raised a young girl orphaned from a devastating house.",
+                            ReleaseDate = new DateTime(2012, 4, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 70,
+                            Title = "The Suicide Squad",
+                            Description = "Supervillains Harley Quinn, Bloodsport, Peacemaker and a collection of nutty cons at Belle Reve prison join the super-secret, super-shady Task Force X as they are dropped off at the remote, enemy-infused island of Corto Maltese.",
+                            ReleaseDate = new DateTime(2007, 4, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 71,
+                            Title = "The Suicide Squad 1",
+                            Description = "Harley Quinn, Bloodsport, Peacemaker and a collection of nutty cons at Belle Reve prison join the super-secret, super-shady Task Force X as they are dropped off at the remote, enemy-infused island of Corto Maltese.",
+                            ReleaseDate = new DateTime(2011, 7, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 72,
+                            Title = "The Suicide Squad 2",
+                            Description = "Supervillains Harley Quinn, Bloodsport, Peacemaker and a collection of nutty cons at Belle Reve prison join the super-secret, super-shady Task Force X as they are dropped off at the remote, enemy-infused island of Corto Maltese.",
+                            ReleaseDate = new DateTime(2014, 4, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 73,
+                            Title = "The Suicide Squad 3",
+                            Description = "Supervillains Harley Quinn, Bloodsport, Peacemaker and a collection of nutty cons at Belle Reve prison join the super-secret, super-shady Task Force X as they are dropped off at the remote, enemy-infused island of Corto Maltese.",
+                            ReleaseDate = new DateTime(2019, 4, 10),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 74,
+                            Title = "Jungle Cruise",
+                            Description = "Dr. Lily Houghton enlists the aid of wisecracking skipper Frank Wolff to take her down the Amazon in his dilapidated boat. Together, they search for an ancient tree that holds the power to heal – a discovery that will change the future of medicine.",
+                            ReleaseDate = new DateTime(2017, 11, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 75,
+                            Title = "Jungle Cruise 1",
+                            Description = "Dr. Lily Houghton enlists the aid of wisecracking skipper Frank Wolff to take her down the Amazon in his dilapidated boat. Together, they search for an ancient tree that holds the power to heal – a discovery that will change the future of medicine.",
+                            ReleaseDate = new DateTime(2018, 11, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 76,
+                            Title = "Jungle Cruise 2",
+                            Description = "Dr. Lily Houghton enlists the aid of wisecracking skipper Frank Wolff to take her down the Amazon in his dilapidated boat. Together, they search for an ancient tree that holds the power to heal – a discovery that will change the future of medicine.",
+                            ReleaseDate = new DateTime(2019, 6, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 77,
+                            Title = "Cinderella",
+                            Description = "Cinderella, an orphaned girl with an evil stepmother, has big dreams and with the help of her Fabulous Godmother, she perseveres to make them come true.",
+                            ReleaseDate = new DateTime(2015, 9, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 78,
+                            Title = "Cinderella 2",
+                            Description = "An orphaned girl with an evil stepmother, has big dreams and with the help of her Fabulous Godmother, she perseveres to make them come true.",
+                            ReleaseDate = new DateTime(2017, 1, 5),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 79,
+                            Title = "Gladiator",
+                            Description = "A nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(2002, 4, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 80,
+                            Title = "Gladiator 1",
+                            Description = "A nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(2012, 4, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 81,
+                            Title = "Gladiator 2",
+                            Description = "A nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(2013, 4, 11),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 82,
+                            Title = "Gladiator 3",
+                            Description = "A nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(2014, 4, 11),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 83,
+                            Title = "Gladiator 4",
+                            Description = "A nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(2015, 6, 11),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 84,
+                            Title = "Movie 1",
+                            Description = "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(2007, 4, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 85,
+                            Title = "Movie 2",
+                            Description = "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(2019, 4, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 86,
+                            Title = "Movie 3",
+                            Description = "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(2005, 7, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 87,
+                            Title = "Movie 4",
+                            Description = "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(2002, 4, 4),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 88,
+                            Title = "Movie 5",
+                            Description = "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(2001, 4, 7),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 89,
+                            Title = "Movie 6",
+                            Description = "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(1999, 9, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 90,
+                            Title = "Movie 7",
+                            Description = "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(2000, 4, 3),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 91,
+                            Title = "Movie 8",
+                            Description = "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(2001, 4, 2),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 92,
+                            Title = "Movie 9",
+                            Description = "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(2012, 4, 1),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 93,
+                            Title = "Movie Number 1",
+                            Description = "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(2012, 4, 8),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 94,
+                            Title = "Movie Number 2",
+                            Description = "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(2006, 4, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 95,
+                            Title = "Movie Number 3",
+                            Description = "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(2007, 4, 6),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 96,
+                            Title = "Movie Number 4",
+                            Description = "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(2008, 4, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 97,
+                            Title = "Movie Number 5",
+                            Description = "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(2009, 4, 6),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 98,
+                            Title = "Movie Number 6",
+                            Description = "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(2003, 4, 9),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 99,
+                            Title = "Movie Number 7",
+                            Description = "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(2008, 4, 10),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 100,
+                            Title = "Movie Number 8",
+                            Description = "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(2020, 4, 8),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 101,
+                            Title = "Movie Number 9",
+                            Description = "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+                            ReleaseDate = new DateTime(2021, 4, 8),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 102,
+                            Title = "Fast and Furious",
+                            Description = "The Fast and the Furious) is a media franchise centered on a series of action films that are largely concerned with illegal street racing, heists, spies and betrayal.",
+                            ReleaseDate = new DateTime(1997, 4, 3),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 103,
+                            Title = "Fast and Furious 1",
+                            Description = "The Fast and the Furious) is a media franchise centered on a series of action films that are largely concerned with illegal street racing, heists, spies and betrayal.",
+                            ReleaseDate = new DateTime(1999, 4, 8),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 104,
+                            Title = "Fast and Furious 2",
+                            Description = "The Fast and the Furious) is a media franchise centered on a series of action films that are largely concerned with illegal street racing, heists, spies and betrayal.",
+                            ReleaseDate = new DateTime(2001, 9, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 105,
+                            Title = "Fast and Furious 3",
+                            Description = "The Fast and the Furious) is a media franchise centered on a series of action films that are largely concerned with illegal street racing, heists, spies and betrayal.",
+                            ReleaseDate = new DateTime(2002, 9, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 106,
+                            Title = "Fast and Furious 4",
+                            Description = "The Fast and the Furious) is a media franchise centered on a series of action films that are largely concerned with illegal street racing, heists, spies and betrayal.",
+                            ReleaseDate = new DateTime(2003, 9, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 107,
+                            Title = "Fast and Furious 5",
+                            Description = "The Fast and the Furious) is a media franchise centered on a series of action films that are largely concerned with illegal street racing, heists, spies and betrayal.",
+                            ReleaseDate = new DateTime(2004, 9, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 108,
+                            Title = "Fast and Furious 6",
+                            Description = "The Fast and the Furious) is a media franchise centered on a series of action films that are largely concerned with illegal street racing, heists, spies and betrayal.",
+                            ReleaseDate = new DateTime(2005, 9, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 109,
+                            Title = "Fast and Furious 7",
+                            Description = "The Fast and the Furious) is a media franchise centered on a series of action films that are largely concerned with illegal street racing, heists, spies and betrayal.",
+                            ReleaseDate = new DateTime(2008, 9, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 110,
+                            Title = "Fast and Furious 8",
+                            Description = "The Fast and the Furious) is a media franchise centered on a series of action films that are largely concerned with illegal street racing, heists, spies and betrayal.",
+                            ReleaseDate = new DateTime(2011, 9, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 111,
+                            Title = "Fast and Furious 9",
+                            Description = "The Fast and the Furious) is a media franchise centered on a series of action films that are largely concerned with illegal street racing, heists, spies and betrayal.",
+                            ReleaseDate = new DateTime(2015, 9, 6),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 112,
+                            Title = "The Terminator",
+                            Description = "Directed by James Cameron. With Arnold Schwarzenegger, Michael Biehn, Linda Hamilton, Paul Winfield. A human soldier is sent from 2029 to 1984 to stop an almost indestructible cyborg killing machine, sent from the same year, which has been programmed to execute a young woman whose unborn son is the key to humanity's future salvation.",
+                            ReleaseDate = new DateTime(1984, 4, 12),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 113,
+                            Title = "The Terminator 1",
+                            Description = "Directed by James Cameron. With Arnold Schwarzenegger, Michael Biehn, Linda Hamilton, Paul Winfield. A human soldier is sent from 2029 to 1984 to stop an almost indestructible cyborg killing machine, sent from the same year, which has been programmed to execute a young woman whose unborn son is the key to humanity's future salvation.",
+                            ReleaseDate = new DateTime(1989, 4, 8),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 114,
+                            Title = "The Terminator 2",
+                            Description = "Directed by James Cameron. With Arnold Schwarzenegger, Michael Biehn, Linda Hamilton, Paul Winfield. A human soldier is sent from 2029 to 1984 to stop an almost indestructible cyborg killing machine, sent from the same year, which has been programmed to execute a young woman whose unborn son is the key to humanity's future salvation.",
+                            ReleaseDate = new DateTime(1991, 4, 7),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                        new Video
+                        {
+                            Id = 115,
+                            Title = "The Terminator 3",
+                            Description = "Directed by James Cameron. With Arnold Schwarzenegger, Michael Biehn, Linda Hamilton, Paul Winfield. A human soldier is sent from 2029 to 1984 to stop an almost indestructible cyborg killing machine, sent from the same year, which has been programmed to execute a young woman whose unborn son is the key to humanity's future salvation.",
+                            ReleaseDate = new DateTime(1995, 4, 5),
+                            Type = VideoType.Movie,
+                            ImageUrl = "https://media.movieassets.com/static/images/items/movies/posters/500/100/spider-man-c09f709a5db1cd7d6c3dabb678d908e5.jpg"
+                        },
+                      
 
 
                         /// TvShow videos
@@ -359,6 +1123,7 @@ namespace JAP_Task_Backend.Database
 
                             }
 
+
             );
             #endregion
 
@@ -396,6 +1161,153 @@ namespace JAP_Task_Backend.Database
                 new VideoActor { Id = 28, Name = "Bryce Dallas Howard", VideoId = 14 },
                 new VideoActor { Id = 29, Name = "Tobey Maguire", VideoId = 15 },
                 new VideoActor { Id = 30, Name = "Kristen Dunst", VideoId = 15 },
+
+                new VideoActor { Id = 61, Name = "Tom Hanks", VideoId = 31 },
+                new VideoActor { Id = 62, Name = "Matt Damon", VideoId = 31 },
+                new VideoActor { Id = 63, Name = "Leonardo DiCaprio", VideoId = 32 },
+                new VideoActor { Id = 64, Name = "Joseph Gordon-Levitt", VideoId = 32 },
+                new VideoActor { Id = 65, Name = "Henry Cavill", VideoId = 33 },
+                new VideoActor { Id = 66, Name = "Anna Shaffer", VideoId = 33 },
+                new VideoActor { Id = 67, Name = "Tom Hanks", VideoId = 34 },
+                new VideoActor { Id = 68, Name = "Robin Wright", VideoId = 34 },
+                new VideoActor { Id = 69, Name = "Brad Pitt", VideoId = 35 },
+                new VideoActor { Id = 70, Name = "Edward Norton", VideoId = 35 },
+                new VideoActor { Id = 71, Name = "Will Smith", VideoId = 36 },
+                new VideoActor { Id = 72, Name = "Martin Lawrence", VideoId = 36 },
+                new VideoActor { Id = 73, Name = "Will Smith", VideoId = 37 },
+                new VideoActor { Id = 74, Name = "Martin Lawrence", VideoId = 37 },
+                new VideoActor { Id = 75, Name = "Will Smith", VideoId = 38 },
+                new VideoActor { Id = 76, Name = "Martin Lawrence", VideoId = 38 },
+                new VideoActor { Id = 77, Name = "Chris Pratt", VideoId = 39 },
+                new VideoActor { Id = 78, Name = "Yvonne Strahovski", VideoId = 39 },
+                new VideoActor { Id = 79, Name = "Sam Neill", VideoId = 40 },
+                new VideoActor { Id = 80, Name = "Laura Dern", VideoId = 40 },
+                new VideoActor { Id = 81, Name = "Jeff Goldblum", VideoId = 41 },
+                new VideoActor { Id = 82, Name = "Julianne Moore", VideoId = 41 },
+                new VideoActor { Id = 83, Name = "Sam Neill", VideoId = 42 },
+                new VideoActor { Id = 84, Name = "William H. Macy", VideoId = 42 },
+                new VideoActor { Id = 85, Name = "Chris Pratt", VideoId = 43 },
+                new VideoActor { Id = 86, Name = "Bryce Dallas Howard", VideoId = 43 },
+                new VideoActor { Id = 87, Name = "Chris Pratt", VideoId = 44 },
+                new VideoActor { Id = 88, Name = "Bryce Dallas Howard", VideoId = 44 },
+                new VideoActor { Id = 89, Name = "Tobey Maguire", VideoId = 45 },
+                new VideoActor { Id = 90, Name = "Kristen Dunst", VideoId = 45 },
+                new VideoActor { Id = 91, Name = "Tom Hanks", VideoId = 46 },
+                new VideoActor { Id = 92, Name = "Matt Damon", VideoId = 46 },
+                new VideoActor { Id = 93, Name = "Leonardo DiCaprio", VideoId = 47 },
+                new VideoActor { Id = 94, Name = "Joseph Gordon-Levitt", VideoId = 47 },
+                new VideoActor { Id = 95, Name = "Henry Cavill", VideoId = 48 },
+                new VideoActor { Id = 96, Name = "Anna Shaffer", VideoId = 48 },
+                new VideoActor { Id = 97, Name = "Tom Hanks", VideoId = 49 },
+                new VideoActor { Id = 98, Name = "Robin Wright", VideoId = 49 },
+                new VideoActor { Id = 99, Name = "Brad Pitt", VideoId = 50 },
+                new VideoActor { Id = 100, Name = "Edward Norton", VideoId = 50 },
+                new VideoActor { Id = 101, Name = "Will Smith", VideoId = 51 },
+                new VideoActor { Id = 102, Name = "Martin Lawrence", VideoId = 51 },
+                new VideoActor { Id = 103, Name = "Will Smith", VideoId = 52 },
+                new VideoActor { Id = 104, Name = "Martin Lawrence", VideoId = 52 },
+                new VideoActor { Id = 105, Name = "Will Smith", VideoId = 53 },
+                new VideoActor { Id = 106, Name = "Martin Lawrence", VideoId = 53 },
+                new VideoActor { Id = 107, Name = "Chris Pratt", VideoId = 54 },
+                new VideoActor { Id = 108, Name = "Yvonne Strahovski", VideoId = 54 },
+                new VideoActor { Id = 109, Name = "Sam Neill", VideoId = 55 },
+                new VideoActor { Id = 110, Name = "Laura Dern", VideoId = 55 },
+                new VideoActor { Id = 111, Name = "Jeff Goldblum", VideoId = 56 },
+                new VideoActor { Id = 112, Name = "Julianne Moore", VideoId = 56 },
+                new VideoActor { Id = 113, Name = "Sam Neill", VideoId = 57 },
+                new VideoActor { Id = 114, Name = "William H. Macy", VideoId = 57 },
+                new VideoActor { Id = 115, Name = "Chris Pratt", VideoId = 58 },
+                new VideoActor { Id = 116, Name = "Bryce Dallas Howard", VideoId = 58 },
+                new VideoActor { Id = 117, Name = "Chris Pratt", VideoId = 59 },
+                new VideoActor { Id = 118, Name = "Bryce Dallas Howard", VideoId = 59 },
+                new VideoActor { Id = 119, Name = "Tobey Maguire", VideoId = 60 },
+                new VideoActor { Id = 120, Name = "Kristen Dunst", VideoId = 60 },
+                new VideoActor { Id = 121, Name = "Tobey Maguire", VideoId = 62 },
+                new VideoActor { Id = 122, Name = "Kristen Dunst", VideoId = 62 },
+                new VideoActor { Id = 123, Name = "Tobey Maguire", VideoId = 63 },
+                new VideoActor { Id = 124, Name = "Kristen Dunst", VideoId = 63 },
+                new VideoActor { Id = 125, Name = "Tobey Maguire", VideoId = 64 },
+                new VideoActor { Id = 126, Name = "Kristen Dunst", VideoId = 64 },
+                new VideoActor { Id = 127, Name = "Tobey Maguire", VideoId = 65 },
+                new VideoActor { Id = 128, Name = "Kristen Dunst", VideoId = 65 },
+                new VideoActor { Id = 129, Name = "Tobey Maguire", VideoId = 66 },
+                new VideoActor { Id = 130, Name = "Kristen Dunst", VideoId = 66 },
+                new VideoActor { Id = 131, Name = "Tobey Maguire", VideoId = 67 },
+                new VideoActor { Id = 132, Name = "Kristen Dunst", VideoId = 67 },
+                new VideoActor { Id = 133, Name = "Tobey Maguire", VideoId = 68 },
+                new VideoActor { Id = 134, Name = "Kristen Dunst", VideoId = 68 },
+                new VideoActor { Id = 135, Name = "Tobey Maguire", VideoId = 69 },
+                new VideoActor { Id = 136, Name = "Kristen Dunst", VideoId = 69 },
+                new VideoActor { Id = 137, Name = "Tobey Maguire", VideoId = 70 },
+                new VideoActor { Id = 138, Name = "Kristen Dunst", VideoId = 70 },
+                new VideoActor { Id = 139, Name = "Tobey Maguire", VideoId = 71 },
+                new VideoActor { Id = 140, Name = "Kristen Dunst", VideoId = 71 },
+                new VideoActor { Id = 141, Name = "Tobey Maguire", VideoId = 72 },
+                new VideoActor { Id = 142, Name = "Kristen Dunst", VideoId = 72 },
+                new VideoActor { Id = 143, Name = "Tobey Maguire", VideoId = 73 },
+                new VideoActor { Id = 144, Name = "Kristen Dunst", VideoId = 73 },
+                new VideoActor { Id = 145, Name = "Tobey Maguire", VideoId = 74 },
+                new VideoActor { Id = 146, Name = "Kristen Dunst", VideoId = 74 },
+                new VideoActor { Id = 147, Name = "Tobey Maguire", VideoId = 75 },
+                new VideoActor { Id = 148, Name = "Kristen Dunst", VideoId = 75 },
+                new VideoActor { Id = 149, Name = "Tobey Maguire", VideoId = 76 },
+                new VideoActor { Id = 151, Name = "Kristen Dunst", VideoId = 76 },
+                new VideoActor { Id = 152, Name = "Tobey Maguire", VideoId = 77 },
+                new VideoActor { Id = 153, Name = "Kristen Dunst", VideoId = 77 },
+                new VideoActor { Id = 154, Name = "Tobey Maguire", VideoId = 78 },
+                new VideoActor { Id = 155, Name = "Kristen Dunst", VideoId = 78 },
+                new VideoActor { Id = 156, Name = "Tobey Maguire", VideoId = 79 },
+                new VideoActor { Id = 157, Name = "Kristen Dunst", VideoId = 79 },
+                new VideoActor { Id = 158, Name = "Tobey Maguire", VideoId = 80 },
+                new VideoActor { Id = 159, Name = "Kristen Dunst", VideoId = 80 },
+                new VideoActor { Id = 160, Name = "Tobey Maguire", VideoId = 81 },
+                new VideoActor { Id = 161, Name = "Kristen Dunst", VideoId = 81 },
+                new VideoActor { Id = 162, Name = "Tobey Maguire", VideoId = 82 },
+                new VideoActor { Id = 163, Name = "Kristen Dunst", VideoId = 82 },
+                new VideoActor { Id = 164, Name = "Tobey Maguire", VideoId = 83 },
+                new VideoActor { Id = 165, Name = "Kristen Dunst", VideoId = 83 },
+                new VideoActor { Id = 166, Name = "Tobey Maguire", VideoId = 84 },
+                new VideoActor { Id = 167, Name = "Kristen Dunst", VideoId = 84 },
+                new VideoActor { Id = 168, Name = "Tobey Maguire", VideoId = 85 },
+                new VideoActor { Id = 169, Name = "Kristen Dunst", VideoId = 85 },
+                new VideoActor { Id = 170, Name = "Tobey Maguire", VideoId = 86 },
+                new VideoActor { Id = 171, Name = "Kristen Dunst", VideoId = 86 },
+                new VideoActor { Id = 172, Name = "Tobey Maguire", VideoId = 87 },
+                new VideoActor { Id = 173, Name = "Kristen Dunst", VideoId = 87 },
+                new VideoActor { Id = 174, Name = "Tobey Maguire", VideoId = 88 },
+                new VideoActor { Id = 175, Name = "Kristen Dunst", VideoId = 88 },
+                new VideoActor { Id = 176, Name = "Tobey Maguire", VideoId = 89 },
+                new VideoActor { Id = 177, Name = "Kristen Dunst", VideoId = 89 },
+                new VideoActor { Id = 178, Name = "Tobey Maguire", VideoId = 90 },
+                new VideoActor { Id = 179, Name = "Kristen Dunst", VideoId = 90 },
+                new VideoActor { Id = 180, Name = "Tobey Maguire", VideoId = 91 },
+                new VideoActor { Id = 181, Name = "Kristen Dunst", VideoId = 91 },
+                new VideoActor { Id = 182, Name = "Tobey Maguire", VideoId = 92 },
+                new VideoActor { Id = 183, Name = "Kristen Dunst", VideoId = 92 },
+                new VideoActor { Id = 184, Name = "Tobey Maguire", VideoId = 94 },
+                new VideoActor { Id = 185, Name = "Kristen Dunst", VideoId = 95 },
+                new VideoActor { Id = 186, Name = "Tobey Maguire", VideoId = 96 },
+                new VideoActor { Id = 187, Name = "Kristen Dunst", VideoId = 97 },
+                new VideoActor { Id = 188, Name = "Tobey Maguire", VideoId = 98 },
+                new VideoActor { Id = 189, Name = "Kristen Dunst", VideoId = 99 },
+                new VideoActor { Id = 190, Name = "Tobey Maguire", VideoId = 100 },
+                new VideoActor { Id = 191, Name = "Kristen Dunst", VideoId = 101 },
+                new VideoActor { Id = 192, Name = "Tobey Maguire", VideoId = 102 },
+                new VideoActor { Id = 193, Name = "Kristen Dunst", VideoId = 103 },
+                new VideoActor { Id = 194, Name = "Tobey Maguire", VideoId = 104 },
+                new VideoActor { Id = 195, Name = "Kristen Dunst", VideoId = 105 },
+                new VideoActor { Id = 196, Name = "Tobey Maguire", VideoId = 106 },
+                new VideoActor { Id = 197, Name = "Kristen Dunst", VideoId = 107 },
+                new VideoActor { Id = 198, Name = "Tobey Maguire", VideoId = 108 },
+                new VideoActor { Id = 199, Name = "Kristen Dunst", VideoId = 109 },
+                new VideoActor { Id = 200, Name = "Tobey Maguire", VideoId = 110 },
+                new VideoActor { Id = 201, Name = "Kristen Dunst", VideoId = 111 },
+                new VideoActor { Id = 202, Name = "Tobey Maguire", VideoId = 112 },
+                new VideoActor { Id = 203, Name = "Kristen Dunst", VideoId = 113 },
+                new VideoActor { Id = 204, Name = "Tobey Maguire", VideoId = 114 },
+                new VideoActor { Id = 205, Name = "Kristen Dunst", VideoId = 115 },
+
+
 
                 ///Tv Shows
                 new VideoActor { Id = 31, Name = "Zoe Kazan", VideoId = 16 },
@@ -447,8 +1359,8 @@ namespace JAP_Task_Backend.Database
                 new Rating { Id = 8, Score = 5, VideoId = 4 },
                 new Rating { Id = 9, Score = 4, VideoId = 5 },
                 new Rating { Id = 10, Score = 4, VideoId = 5 },
-                new Rating { Id = 11, Score = 2, VideoId = 6 },
-                new Rating { Id = 12, Score = 3, VideoId = 6 },
+                new Rating { Id = 11, Score = 0, VideoId = 6 },
+                new Rating { Id = 12, Score = 0, VideoId = 6 },
                 new Rating { Id = 13, Score = 5, VideoId = 7 },
                 new Rating { Id = 14, Score = 5, VideoId = 7 },
                 new Rating { Id = 15, Score = 4, VideoId = 8 },
@@ -467,7 +1379,94 @@ namespace JAP_Task_Backend.Database
                 new Rating { Id = 28, Score = 1, VideoId = 14 },
                 new Rating { Id = 29, Score = 5, VideoId = 15 },
                 new Rating { Id = 30, Score = 2, VideoId = 15 },
+                new Rating { Id = 61, Score = 3, VideoId = 32 },
+                new Rating { Id = 62, Score = 3, VideoId = 33 },
+                new Rating { Id = 63, Score = 0, VideoId = 34 },
+                new Rating { Id = 64, Score = 5, VideoId = 36 },
+                new Rating { Id = 65, Score = 4, VideoId = 37 },
+                new Rating { Id = 66, Score = 4, VideoId = 38 },
+                new Rating { Id = 67, Score = 3, VideoId = 39 },
+                new Rating { Id = 68, Score = 4, VideoId = 41 },
+                new Rating { Id = 69, Score = 2, VideoId = 42 },
+                new Rating { Id = 70, Score = 1, VideoId = 46 },
+                new Rating { Id = 71, Score = 5, VideoId = 46 },
+                new Rating { Id = 72, Score = 2, VideoId = 47 },
+                new Rating { Id = 73, Score = 3, VideoId = 47 },
+                new Rating { Id = 74, Score = 3, VideoId = 48 },
+                new Rating { Id = 75, Score = 4, VideoId = 48 },
+                new Rating { Id = 76, Score = 5, VideoId = 48 },
+                new Rating { Id = 77, Score = 4, VideoId = 49 },
+                new Rating { Id = 78, Score = 4, VideoId = 49 },
+                new Rating { Id = 79, Score = 3, VideoId = 45 },
+                new Rating { Id = 80, Score = 4, VideoId = 46 },
+                new Rating { Id = 81, Score = 2, VideoId = 48 },
+                new Rating { Id = 82, Score = 1, VideoId = 40 },
+                new Rating { Id = 83, Score = 5, VideoId = 41 },
+                new Rating { Id = 84, Score = 2, VideoId = 44 },
+                new Rating { Id = 85, Score = 3, VideoId = 60 },
+                new Rating { Id = 86, Score = 2, VideoId = 61 },
+                new Rating { Id = 87, Score = 4, VideoId = 62 },
+                new Rating { Id = 88, Score = 5, VideoId = 63 },
+                new Rating { Id = 89, Score = 4, VideoId = 64 },
+                new Rating { Id = 90, Score = 3, VideoId = 65 },
+                new Rating { Id = 91, Score = 2, VideoId = 66 },
+                new Rating { Id = 92, Score = 4, VideoId = 67 },
+                new Rating { Id = 93, Score = 1, VideoId = 68 },
+                new Rating { Id = 94, Score = 3, VideoId = 69 },
+                new Rating { Id = 95, Score = 3, VideoId = 70 },
+                new Rating { Id = 96, Score = 2, VideoId = 71 },
+                new Rating { Id = 97, Score = 4, VideoId = 72 },
+                new Rating { Id = 98, Score = 3, VideoId = 73 },
+                new Rating { Id = 99, Score = 5, VideoId = 74 },
+                new Rating { Id = 100, Score = 4, VideoId = 75 },
+                new Rating { Id = 101, Score = 2, VideoId = 75 },
+                new Rating { Id = 102, Score = 3, VideoId = 76 },
+                new Rating { Id = 103, Score = 5, VideoId = 76 },
+                new Rating { Id = 104, Score = 4, VideoId = 77 },
+                new Rating { Id = 105, Score = 1, VideoId = 77 },
+                new Rating { Id = 106, Score = 2, VideoId = 78 },
+                new Rating { Id = 107, Score = 5, VideoId = 79 },
+                new Rating { Id = 108, Score = 3, VideoId = 80 },
 
+                new Rating { Id = 109, Score = 4, VideoId = 81 },
+                new Rating { Id = 110, Score = 2, VideoId = 82 },
+                new Rating { Id = 111, Score = 3, VideoId = 83 },
+                new Rating { Id = 112, Score = 5, VideoId = 84 },
+                new Rating { Id = 113, Score = 4, VideoId = 85 },
+                new Rating { Id = 114, Score = 1, VideoId = 85 },
+                new Rating { Id = 115, Score = 2, VideoId = 86 },
+                new Rating { Id = 116, Score = 5, VideoId = 88 },
+                new Rating { Id = 117, Score = 3, VideoId = 89 },
+                new Rating { Id = 118, Score = 5, VideoId = 90 },
+                new Rating { Id = 119, Score = 3, VideoId = 91 },
+                new Rating { Id = 120, Score = 0, VideoId = 92 },
+                new Rating { Id = 121, Score = 4, VideoId = 93 },
+                new Rating { Id = 122, Score = 2, VideoId = 94 },
+                new Rating { Id = 123, Score = 3, VideoId = 95 },
+                new Rating { Id = 124, Score = 5, VideoId = 96 },
+                new Rating { Id = 125, Score = 4, VideoId = 97 },
+                new Rating { Id = 126, Score = 1, VideoId = 98 },
+                new Rating { Id = 127, Score = 2, VideoId = 99 },
+                new Rating { Id = 128, Score = 5, VideoId = 100 },
+                new Rating { Id = 129, Score = 3, VideoId = 101 },
+                new Rating { Id = 130, Score = 5, VideoId = 102 },
+                new Rating { Id = 131, Score = 3, VideoId = 103 },
+                new Rating { Id = 132, Score = 0, VideoId = 104 },
+                new Rating { Id = 133, Score = 0, VideoId = 105 },
+                new Rating { Id = 134, Score = 3, VideoId = 106 },
+                new Rating { Id = 135, Score = 5, VideoId = 107 },
+                new Rating { Id = 136, Score = 3, VideoId = 108 },
+                new Rating { Id = 137, Score = 0, VideoId = 109 },
+                new Rating { Id = 138, Score = 0, VideoId = 110 },
+                new Rating { Id = 139, Score = 0, VideoId = 111 },
+                new Rating { Id = 140, Score = 0, VideoId = 112 },
+                new Rating { Id = 141, Score = 3, VideoId = 113 },
+                new Rating { Id = 142, Score = 5, VideoId = 114 },
+                new Rating { Id = 143, Score = 3, VideoId = 115 },
+                new Rating { Id = 144, Score = 0, VideoId = 46 },
+                new Rating { Id = 145, Score = 0, VideoId = 47 },
+                new Rating { Id = 146, Score = 0, VideoId = 45 },
+              
                 ///TvShows Rating
                 new Rating { Id = 31, Score = 4, VideoId = 16 },
                 new Rating { Id = 32, Score = 2, VideoId = 16 },
@@ -502,271 +1501,6 @@ namespace JAP_Task_Backend.Database
 
             );
             #endregion
-
-            //modelBuilder.Entity<Screening>().HasData(
-            //     new Screening { Id = 1, VideoId = 1, DateAndTime = new DateTime(2021, 9, 20, 17, 0, 0) },
-            //     new Screening { Id = 2, VideoId = 1, DateAndTime = new DateTime(2021, 9, 20, 19, 0, 0) },
-            //     new Screening { Id = 3, VideoId = 1, DateAndTime = new DateTime(2021, 9, 20, 21, 0, 0) },
-            //     new Screening { Id = 4, VideoId = 1, DateAndTime = new DateTime(2021, 9, 21, 17, 0, 0) },
-            //     new Screening { Id = 5, VideoId = 1, DateAndTime = new DateTime(2021, 9, 21, 19, 0, 0) },
-            //     new Screening { Id = 6, VideoId = 1, DateAndTime = new DateTime(2021, 9, 21, 21, 0, 0) },
-            //     new Screening { Id = 7, VideoId = 1, DateAndTime = new DateTime(2021, 9, 22, 17, 0, 0) },
-            //     new Screening { Id = 8, VideoId = 1, DateAndTime = new DateTime(2021, 9, 22, 19, 0, 0) },
-            //     new Screening { Id = 9, VideoId = 1, DateAndTime = new DateTime(2021, 9, 22, 21, 0, 0) },
-            //     new Screening { Id = 10, VideoId = 1, DateAndTime = new DateTime(2021, 9, 23, 17, 0, 0) },
-            //     new Screening { Id = 11, VideoId = 1, DateAndTime = new DateTime(2021, 9, 23, 19, 0, 0) },
-            //     new Screening { Id = 12, VideoId = 1, DateAndTime = new DateTime(2021, 9, 23, 21, 0, 0) },
-            //     new Screening { Id = 13, VideoId = 1, DateAndTime = new DateTime(2021, 9, 24, 17, 0, 0) },
-            //     new Screening { Id = 14, VideoId = 1, DateAndTime = new DateTime(2021, 9, 24, 21, 0, 0) },
-            //     new Screening { Id = 15, VideoId = 1, DateAndTime = new DateTime(2021, 9, 25, 17, 0, 0) },
-            //     new Screening { Id = 16, VideoId = 1, DateAndTime = new DateTime(2021, 9, 25, 19, 0, 0) },
-            //     new Screening { Id = 17, VideoId = 1, DateAndTime = new DateTime(2021, 9, 25, 21, 0, 0) },
-            //     new Screening { Id = 18, VideoId = 1, DateAndTime = new DateTime(2021, 9, 26, 17, 0, 0) },
-            //     new Screening { Id = 19, VideoId = 1, DateAndTime = new DateTime(2021, 9, 26, 19, 0, 0) },
-            //     new Screening { Id = 20, VideoId = 1, DateAndTime = new DateTime(2021, 9, 26, 21, 0, 0) },
-
-            //     new Screening { Id = 21, VideoId = 2, DateAndTime = new DateTime(2021, 9, 20, 17, 0, 0) },
-            //     new Screening { Id = 22, VideoId = 2, DateAndTime = new DateTime(2021, 9, 20, 19, 0, 0) },
-            //     new Screening { Id = 23, VideoId = 2, DateAndTime = new DateTime(2021, 9, 20, 21, 0, 0) },
-            //     new Screening { Id = 24, VideoId = 2, DateAndTime = new DateTime(2021, 9, 21, 17, 0, 0) },
-            //     new Screening { Id = 25, VideoId = 2, DateAndTime = new DateTime(2021, 9, 21, 19, 0, 0) },
-            //     new Screening { Id = 26, VideoId = 2, DateAndTime = new DateTime(2021, 9, 21, 21, 0, 0) },
-            //     new Screening { Id = 27, VideoId = 2, DateAndTime = new DateTime(2021, 9, 22, 17, 0, 0) },
-            //     new Screening { Id = 28, VideoId = 2, DateAndTime = new DateTime(2021, 9, 22, 19, 0, 0) },
-            //     new Screening { Id = 29, VideoId = 2, DateAndTime = new DateTime(2021, 9, 23, 17, 0, 0) },
-            //     new Screening { Id = 30, VideoId = 2, DateAndTime = new DateTime(2021, 9, 23, 19, 0, 0) },
-            //     new Screening { Id = 31, VideoId = 2, DateAndTime = new DateTime(2021, 9, 23, 21, 0, 0) },
-            //     new Screening { Id = 32, VideoId = 2, DateAndTime = new DateTime(2021, 9, 24, 17, 0, 0) },
-            //     new Screening { Id = 33, VideoId = 2, DateAndTime = new DateTime(2021, 9, 24, 19, 0, 0) },
-            //     new Screening { Id = 34, VideoId = 2, DateAndTime = new DateTime(2021, 9, 24, 21, 0, 0) },
-            //     new Screening { Id = 35, VideoId = 2, DateAndTime = new DateTime(2021, 9, 25, 17, 0, 0) },
-            //     new Screening { Id = 36, VideoId = 2, DateAndTime = new DateTime(2021, 9, 25, 19, 0, 0) },
-            //     new Screening { Id = 37, VideoId = 2, DateAndTime = new DateTime(2021, 9, 25, 21, 0, 0) },
-            //     new Screening { Id = 38, VideoId = 2, DateAndTime = new DateTime(2021, 9, 26, 17, 0, 0) },
-            //     new Screening { Id = 39, VideoId = 2, DateAndTime = new DateTime(2021, 9, 26, 19, 0, 0) },
-            //     new Screening { Id = 40, VideoId = 2, DateAndTime = new DateTime(2021, 9, 26, 21, 0, 0) },
-
-            //     new Screening { Id = 41, VideoId = 3, DateAndTime = new DateTime(2021, 9, 20, 17, 0, 0) },
-            //     new Screening { Id = 42, VideoId = 3, DateAndTime = new DateTime(2021, 9, 20, 19, 0, 0) },
-            //     new Screening { Id = 43, VideoId = 3, DateAndTime = new DateTime(2021, 9, 20, 21, 0, 0) },
-            //     new Screening { Id = 44, VideoId = 3, DateAndTime = new DateTime(2021, 9, 21, 17, 0, 0) },
-            //     new Screening { Id = 45, VideoId = 3, DateAndTime = new DateTime(2021, 9, 21, 19, 0, 0) },
-            //     new Screening { Id = 46, VideoId = 3, DateAndTime = new DateTime(2021, 9, 22, 17, 0, 0) },
-            //     new Screening { Id = 47, VideoId = 3, DateAndTime = new DateTime(2021, 9, 22, 19, 0, 0) },
-            //     new Screening { Id = 48, VideoId = 3, DateAndTime = new DateTime(2021, 9, 22, 21, 0, 0) },
-            //     new Screening { Id = 49, VideoId = 3, DateAndTime = new DateTime(2021, 9, 23, 17, 0, 0) },
-            //     new Screening { Id = 50, VideoId = 3, DateAndTime = new DateTime(2021, 9, 23, 19, 0, 0) },
-            //     new Screening { Id = 51, VideoId = 3, DateAndTime = new DateTime(2021, 9, 23, 21, 0, 0) },
-            //     new Screening { Id = 52, VideoId = 3, DateAndTime = new DateTime(2021, 9, 24, 17, 0, 0) },
-            //     new Screening { Id = 53, VideoId = 3, DateAndTime = new DateTime(2021, 9, 24, 19, 0, 0) },
-            //     new Screening { Id = 54, VideoId = 3, DateAndTime = new DateTime(2021, 9, 24, 21, 0, 0) },
-            //     new Screening { Id = 55, VideoId = 3, DateAndTime = new DateTime(2021, 9, 25, 17, 0, 0) },
-            //     new Screening { Id = 56, VideoId = 3, DateAndTime = new DateTime(2021, 9, 25, 19, 0, 0) },
-            //     new Screening { Id = 57, VideoId = 3, DateAndTime = new DateTime(2021, 9, 25, 21, 0, 0) },
-            //     new Screening { Id = 58, VideoId = 3, DateAndTime = new DateTime(2021, 9, 26, 17, 0, 0) },
-            //     new Screening { Id = 59, VideoId = 3, DateAndTime = new DateTime(2021, 9, 26, 19, 0, 0) },
-            //     new Screening { Id = 60, VideoId = 3, DateAndTime = new DateTime(2021, 9, 26, 21, 0, 0) },
-
-            //     new Screening { Id = 61, VideoId = 4, DateAndTime = new DateTime(2021, 9, 20, 17, 0, 0) },
-            //     new Screening { Id = 62, VideoId = 4, DateAndTime = new DateTime(2021, 9, 20, 19, 0, 0) },
-            //     new Screening { Id = 63, VideoId = 4, DateAndTime = new DateTime(2021, 9, 20, 21, 0, 0) },
-            //     new Screening { Id = 64, VideoId = 4, DateAndTime = new DateTime(2021, 9, 21, 19, 0, 0) },
-            //     new Screening { Id = 65, VideoId = 4, DateAndTime = new DateTime(2021, 9, 21, 21, 0, 0) },
-            //     new Screening { Id = 66, VideoId = 4, DateAndTime = new DateTime(2021, 9, 22, 17, 0, 0) },
-            //     new Screening { Id = 67, VideoId = 4, DateAndTime = new DateTime(2021, 9, 22, 19, 0, 0) },
-            //     new Screening { Id = 68, VideoId = 4, DateAndTime = new DateTime(2021, 9, 22, 21, 0, 0) },
-            //     new Screening { Id = 69, VideoId = 4, DateAndTime = new DateTime(2021, 9, 23, 17, 0, 0) },
-            //     new Screening { Id = 70, VideoId = 4, DateAndTime = new DateTime(2021, 9, 23, 21, 0, 0) },
-            //     new Screening { Id = 71, VideoId = 4, DateAndTime = new DateTime(2021, 9, 24, 17, 0, 0) },
-            //     new Screening { Id = 72, VideoId = 4, DateAndTime = new DateTime(2021, 9, 24, 19, 0, 0) },
-            //     new Screening { Id = 73, VideoId = 4, DateAndTime = new DateTime(2021, 9, 24, 21, 0, 0) },
-            //     new Screening { Id = 74, VideoId = 4, DateAndTime = new DateTime(2021, 9, 25, 17, 0, 0) },
-            //     new Screening { Id = 75, VideoId = 4, DateAndTime = new DateTime(2021, 9, 25, 19, 0, 0) },
-            //     new Screening { Id = 76, VideoId = 4, DateAndTime = new DateTime(2021, 9, 25, 21, 0, 0) },
-            //     new Screening { Id = 77, VideoId = 4, DateAndTime = new DateTime(2021, 9, 26, 17, 0, 0) },
-            //     new Screening { Id = 78, VideoId = 4, DateAndTime = new DateTime(2021, 9, 26, 19, 0, 0) },
-            //     new Screening { Id = 79, VideoId = 4, DateAndTime = new DateTime(2021, 9, 26, 21, 0, 0) },
-
-            //     new Screening { Id = 80, VideoId = 5, DateAndTime = new DateTime(2021, 9, 20, 17, 0, 0) },
-            //     new Screening { Id = 81, VideoId = 5, DateAndTime = new DateTime(2021, 9, 20, 19, 0, 0) },
-            //     new Screening { Id = 82, VideoId = 5, DateAndTime = new DateTime(2021, 9, 20, 21, 0, 0) },
-            //     new Screening { Id = 83, VideoId = 5, DateAndTime = new DateTime(2021, 9, 21, 17, 0, 0) },
-            //     new Screening { Id = 84, VideoId = 5, DateAndTime = new DateTime(2021, 9, 21, 19, 0, 0) },
-            //     new Screening { Id = 85, VideoId = 5, DateAndTime = new DateTime(2021, 9, 22, 19, 0, 0) },
-            //     new Screening { Id = 86, VideoId = 5, DateAndTime = new DateTime(2021, 9, 22, 21, 0, 0) },
-            //     new Screening { Id = 87, VideoId = 5, DateAndTime = new DateTime(2021, 9, 23, 17, 0, 0) },
-            //     new Screening { Id = 88, VideoId = 5, DateAndTime = new DateTime(2021, 9, 23, 19, 0, 0) },
-            //     new Screening { Id = 89, VideoId = 5, DateAndTime = new DateTime(2021, 9, 24, 17, 0, 0) },
-            //     new Screening { Id = 90, VideoId = 5, DateAndTime = new DateTime(2021, 9, 24, 19, 0, 0) },
-            //     new Screening { Id = 91, VideoId = 5, DateAndTime = new DateTime(2021, 9, 24, 21, 0, 0) },
-            //     new Screening { Id = 92, VideoId = 5, DateAndTime = new DateTime(2021, 9, 25, 17, 0, 0) },
-            //     new Screening { Id = 93, VideoId = 5, DateAndTime = new DateTime(2021, 9, 25, 19, 0, 0) },
-            //     new Screening { Id = 94, VideoId = 5, DateAndTime = new DateTime(2021, 9, 25, 21, 0, 0) },
-            //     new Screening { Id = 95, VideoId = 5, DateAndTime = new DateTime(2021, 9, 26, 17, 0, 0) },
-            //     new Screening { Id = 96, VideoId = 5, DateAndTime = new DateTime(2021, 9, 26, 19, 0, 0) },
-            //     new Screening { Id = 97, VideoId = 5, DateAndTime = new DateTime(2021, 9, 26, 21, 0, 0) },
-
-            //     new Screening { Id = 98, VideoId = 6, DateAndTime = new DateTime(2021, 9, 20, 17, 0, 0) },
-            //     new Screening { Id = 99, VideoId = 6, DateAndTime = new DateTime(2021, 9, 20, 19, 0, 0) },
-            //     new Screening { Id = 100, VideoId = 6, DateAndTime = new DateTime(2021, 9, 20, 21, 0, 0) },
-            //     new Screening { Id = 101, VideoId = 6, DateAndTime = new DateTime(2021, 9, 21, 17, 0, 0) },
-            //     new Screening { Id = 102, VideoId = 6, DateAndTime = new DateTime(2021, 9, 21, 19, 0, 0) },
-            //     new Screening { Id = 103, VideoId = 6, DateAndTime = new DateTime(2021, 9, 21, 21, 0, 0) },
-            //     new Screening { Id = 104, VideoId = 6, DateAndTime = new DateTime(2021, 9, 22, 17, 0, 0) },
-            //     new Screening { Id = 105, VideoId = 6, DateAndTime = new DateTime(2021, 9, 23, 21, 0, 0) },
-            //     new Screening { Id = 106, VideoId = 6, DateAndTime = new DateTime(2021, 9, 24, 17, 0, 0) },
-            //     new Screening { Id = 107, VideoId = 6, DateAndTime = new DateTime(2021, 9, 24, 19, 0, 0) },
-            //     new Screening { Id = 108, VideoId = 6, DateAndTime = new DateTime(2021, 9, 24, 21, 0, 0) },
-            //     new Screening { Id = 109, VideoId = 6, DateAndTime = new DateTime(2021, 9, 25, 17, 0, 0) },
-            //     new Screening { Id = 110, VideoId = 6, DateAndTime = new DateTime(2021, 9, 25, 19, 0, 0) },
-            //     new Screening { Id = 111, VideoId = 6, DateAndTime = new DateTime(2021, 9, 25, 21, 0, 0) },
-            //     new Screening { Id = 112, VideoId = 6, DateAndTime = new DateTime(2021, 9, 26, 17, 0, 0) },
-            //     new Screening { Id = 113, VideoId = 6, DateAndTime = new DateTime(2021, 9, 26, 19, 0, 0) },
-            //     new Screening { Id = 114, VideoId = 6, DateAndTime = new DateTime(2021, 9, 26, 21, 0, 0) },
-
-            //     new Screening { Id = 115, VideoId = 7, DateAndTime = new DateTime(2021, 9, 20, 17, 0, 0) },
-            //     new Screening { Id = 116, VideoId = 7, DateAndTime = new DateTime(2021, 9, 20, 19, 0, 0) },
-            //     new Screening { Id = 117, VideoId = 7, DateAndTime = new DateTime(2021, 9, 20, 21, 0, 0) },
-            //     new Screening { Id = 118, VideoId = 7, DateAndTime = new DateTime(2021, 9, 21, 17, 0, 0) },
-            //     new Screening { Id = 119, VideoId = 7, DateAndTime = new DateTime(2021, 9, 22, 19, 0, 0) },
-            //     new Screening { Id = 120, VideoId = 7, DateAndTime = new DateTime(2021, 9, 22, 21, 0, 0) },
-            //     new Screening { Id = 121, VideoId = 7, DateAndTime = new DateTime(2021, 9, 23, 17, 0, 0) },
-            //     new Screening { Id = 122, VideoId = 7, DateAndTime = new DateTime(2021, 9, 23, 19, 0, 0) },
-            //     new Screening { Id = 123, VideoId = 7, DateAndTime = new DateTime(2021, 9, 23, 21, 0, 0) },
-            //     new Screening { Id = 124, VideoId = 7, DateAndTime = new DateTime(2021, 9, 25, 17, 0, 0) },
-            //     new Screening { Id = 125, VideoId = 7, DateAndTime = new DateTime(2021, 9, 25, 19, 0, 0) },
-            //     new Screening { Id = 126, VideoId = 7, DateAndTime = new DateTime(2021, 9, 25, 21, 0, 0) },
-            //     new Screening { Id = 127, VideoId = 7, DateAndTime = new DateTime(2021, 9, 26, 17, 0, 0) },
-            //     new Screening { Id = 128, VideoId = 7, DateAndTime = new DateTime(2021, 9, 26, 19, 0, 0) },
-            //     new Screening { Id = 129, VideoId = 7, DateAndTime = new DateTime(2021, 9, 26, 21, 0, 0) },
-
-            //     new Screening { Id = 130, VideoId = 8, DateAndTime = new DateTime(2021, 9, 20, 17, 0, 0) },
-            //     new Screening { Id = 131, VideoId = 8, DateAndTime = new DateTime(2021, 9, 20, 19, 0, 0) },
-            //     new Screening { Id = 132, VideoId = 8, DateAndTime = new DateTime(2021, 9, 20, 21, 0, 0) },
-            //     new Screening { Id = 133, VideoId = 8, DateAndTime = new DateTime(2021, 9, 21, 17, 0, 0) },
-            //     new Screening { Id = 134, VideoId = 8, DateAndTime = new DateTime(2021, 9, 21, 19, 0, 0) },
-            //     new Screening { Id = 135, VideoId = 8, DateAndTime = new DateTime(2021, 9, 21, 21, 0, 0) },
-            //     new Screening { Id = 136, VideoId = 8, DateAndTime = new DateTime(2021, 9, 22, 17, 0, 0) },
-            //     new Screening { Id = 137, VideoId = 8, DateAndTime = new DateTime(2021, 9, 23, 19, 0, 0) },
-            //     new Screening { Id = 138, VideoId = 8, DateAndTime = new DateTime(2021, 9, 23, 21, 0, 0) },
-            //     new Screening { Id = 139, VideoId = 8, DateAndTime = new DateTime(2021, 9, 24, 17, 0, 0) },
-            //     new Screening { Id = 140, VideoId = 8, DateAndTime = new DateTime(2021, 9, 24, 19, 0, 0) },
-            //     new Screening { Id = 141, VideoId = 8, DateAndTime = new DateTime(2021, 9, 24, 21, 0, 0) },
-            //     new Screening { Id = 142, VideoId = 8, DateAndTime = new DateTime(2021, 9, 25, 17, 0, 0) },
-            //     new Screening { Id = 143, VideoId = 8, DateAndTime = new DateTime(2021, 9, 25, 19, 0, 0) },
-            //     new Screening { Id = 144, VideoId = 8, DateAndTime = new DateTime(2021, 9, 25, 21, 0, 0) },
-            //     new Screening { Id = 145, VideoId = 8, DateAndTime = new DateTime(2021, 9, 26, 17, 0, 0) },
-            //     new Screening { Id = 146, VideoId = 8, DateAndTime = new DateTime(2021, 9, 26, 19, 0, 0) },
-            //     new Screening { Id = 147, VideoId = 8, DateAndTime = new DateTime(2021, 9, 26, 21, 0, 0) },
-
-            //     new Screening { Id = 148, VideoId = 9, DateAndTime = new DateTime(2021, 9, 20, 17, 0, 0) },
-            //     new Screening { Id = 149, VideoId = 9, DateAndTime = new DateTime(2021, 9, 20, 19, 0, 0) },
-            //     new Screening { Id = 150, VideoId = 9, DateAndTime = new DateTime(2021, 9, 20, 21, 0, 0) },
-            //     new Screening { Id = 151, VideoId = 9, DateAndTime = new DateTime(2021, 9, 21, 17, 0, 0) },
-            //     new Screening { Id = 152, VideoId = 9, DateAndTime = new DateTime(2021, 9, 21, 21, 0, 0) },
-            //     new Screening { Id = 153, VideoId = 9, DateAndTime = new DateTime(2021, 9, 22, 17, 0, 0) },
-            //     new Screening { Id = 154, VideoId = 9, DateAndTime = new DateTime(2021, 9, 22, 19, 0, 0) },
-            //     new Screening { Id = 155, VideoId = 9, DateAndTime = new DateTime(2021, 9, 24, 17, 0, 0) },
-            //     new Screening { Id = 156, VideoId = 9, DateAndTime = new DateTime(2021, 9, 24, 19, 0, 0) },
-            //     new Screening { Id = 157, VideoId = 9, DateAndTime = new DateTime(2021, 9, 24, 21, 0, 0) },
-            //     new Screening { Id = 158, VideoId = 9, DateAndTime = new DateTime(2021, 9, 25, 17, 0, 0) },
-            //     new Screening { Id = 159, VideoId = 9, DateAndTime = new DateTime(2021, 9, 25, 19, 0, 0) },
-            //     new Screening { Id = 160, VideoId = 9, DateAndTime = new DateTime(2021, 9, 25, 21, 0, 0) },
-            //     new Screening { Id = 161, VideoId = 9, DateAndTime = new DateTime(2021, 9, 26, 17, 0, 0) },
-            //     new Screening { Id = 162, VideoId = 9, DateAndTime = new DateTime(2021, 9, 26, 19, 0, 0) },
-            //     new Screening { Id = 163, VideoId = 9, DateAndTime = new DateTime(2021, 9, 26, 21, 0, 0) },
-
-            //     new Screening { Id = 164, VideoId = 10, DateAndTime = new DateTime(2021, 9, 20, 17, 0, 0) },
-            //     new Screening { Id = 165, VideoId = 10, DateAndTime = new DateTime(2021, 9, 20, 19, 0, 0) },
-            //     new Screening { Id = 166, VideoId = 10, DateAndTime = new DateTime(2021, 9, 20, 21, 0, 0) },
-            //     new Screening { Id = 167, VideoId = 10, DateAndTime = new DateTime(2021, 9, 22, 17, 0, 0) },
-            //     new Screening { Id = 168, VideoId = 10, DateAndTime = new DateTime(2021, 9, 22, 19, 0, 0) },
-            //     new Screening { Id = 169, VideoId = 10, DateAndTime = new DateTime(2021, 9, 22, 21, 0, 0) },
-            //     new Screening { Id = 170, VideoId = 10, DateAndTime = new DateTime(2021, 9, 23, 17, 0, 0) },
-            //     new Screening { Id = 171, VideoId = 10, DateAndTime = new DateTime(2021, 9, 23, 19, 0, 0) },
-            //     new Screening { Id = 173, VideoId = 10, DateAndTime = new DateTime(2021, 9, 23, 21, 0, 0) },
-            //     new Screening { Id = 174, VideoId = 10, DateAndTime = new DateTime(2021, 9, 24, 17, 0, 0) },
-            //     new Screening { Id = 175, VideoId = 10, DateAndTime = new DateTime(2021, 9, 24, 19, 0, 0) },
-            //     new Screening { Id = 176, VideoId = 10, DateAndTime = new DateTime(2021, 9, 24, 21, 0, 0) },
-            //     new Screening { Id = 177, VideoId = 10, DateAndTime = new DateTime(2021, 9, 25, 17, 0, 0) },
-            //     new Screening { Id = 178, VideoId = 10, DateAndTime = new DateTime(2021, 9, 25, 19, 0, 0) },
-            //     new Screening { Id = 179, VideoId = 10, DateAndTime = new DateTime(2021, 9, 26, 21, 0, 0) },
-
-            //     new Screening { Id = 180, VideoId = 11, DateAndTime = new DateTime(2021, 9, 20, 17, 0, 0) },
-            //     new Screening { Id = 181, VideoId = 11, DateAndTime = new DateTime(2021, 9, 20, 19, 0, 0) },
-            //     new Screening { Id = 182, VideoId = 11, DateAndTime = new DateTime(2021, 9, 20, 21, 0, 0) },
-            //     new Screening { Id = 183, VideoId = 11, DateAndTime = new DateTime(2021, 9, 21, 17, 0, 0) },
-            //     new Screening { Id = 184, VideoId = 11, DateAndTime = new DateTime(2021, 9, 21, 19, 0, 0) },
-            //     new Screening { Id = 185, VideoId = 11, DateAndTime = new DateTime(2021, 9, 21, 21, 0, 0) },
-            //     new Screening { Id = 186, VideoId = 11, DateAndTime = new DateTime(2021, 9, 22, 17, 0, 0) },
-            //     new Screening { Id = 187, VideoId = 11, DateAndTime = new DateTime(2021, 9, 22, 19, 0, 0) },
-            //     new Screening { Id = 188, VideoId = 11, DateAndTime = new DateTime(2021, 9, 22, 21, 0, 0) },
-            //     new Screening { Id = 189, VideoId = 11, DateAndTime = new DateTime(2021, 9, 23, 17, 0, 0) },
-            //     new Screening { Id = 190, VideoId = 11, DateAndTime = new DateTime(2021, 9, 23, 19, 0, 0) },
-            //     new Screening { Id = 191, VideoId = 11, DateAndTime = new DateTime(2021, 9, 23, 21, 0, 0) },
-            //     new Screening { Id = 192, VideoId = 11, DateAndTime = new DateTime(2021, 9, 26, 19, 0, 0) },
-            //     new Screening { Id = 193, VideoId = 11, DateAndTime = new DateTime(2021, 9, 26, 21, 0, 0) },
-
-            //     new Screening { Id = 194, VideoId = 12, DateAndTime = new DateTime(2021, 9, 20, 17, 0, 0) },
-            //     new Screening { Id = 195, VideoId = 12, DateAndTime = new DateTime(2021, 9, 21, 17, 0, 0) },
-            //     new Screening { Id = 196, VideoId = 12, DateAndTime = new DateTime(2021, 9, 21, 19, 0, 0) },
-            //     new Screening { Id = 197, VideoId = 12, DateAndTime = new DateTime(2021, 9, 21, 21, 0, 0) },
-            //     new Screening { Id = 198, VideoId = 12, DateAndTime = new DateTime(2021, 9, 22, 17, 0, 0) },
-            //     new Screening { Id = 199, VideoId = 12, DateAndTime = new DateTime(2021, 9, 22, 19, 0, 0) },
-            //     new Screening { Id = 200, VideoId = 12, DateAndTime = new DateTime(2021, 9, 22, 21, 0, 0) },
-            //     new Screening { Id = 201, VideoId = 12, DateAndTime = new DateTime(2021, 9, 24, 17, 0, 0) },
-            //     new Screening { Id = 202, VideoId = 12, DateAndTime = new DateTime(2021, 9, 26, 17, 0, 0) },
-            //     new Screening { Id = 203, VideoId = 12, DateAndTime = new DateTime(2021, 9, 26, 19, 0, 0) },
-            //     new Screening { Id = 204, VideoId = 12, DateAndTime = new DateTime(2021, 9, 26, 21, 0, 0) },
-
-            //     new Screening { Id = 205, VideoId = 13, DateAndTime = new DateTime(2021, 9, 20, 17, 0, 0) },
-            //     new Screening { Id = 206, VideoId = 13, DateAndTime = new DateTime(2021, 9, 20, 19, 0, 0) },
-            //     new Screening { Id = 207, VideoId = 13, DateAndTime = new DateTime(2021, 9, 20, 21, 0, 0) },
-            //     new Screening { Id = 208, VideoId = 13, DateAndTime = new DateTime(2021, 9, 21, 17, 0, 0) },
-            //     new Screening { Id = 209, VideoId = 13, DateAndTime = new DateTime(2021, 9, 21, 19, 0, 0) },
-            //     new Screening { Id = 210, VideoId = 13, DateAndTime = new DateTime(2021, 9, 21, 21, 0, 0) },
-            //     new Screening { Id = 211, VideoId = 13, DateAndTime = new DateTime(2021, 9, 22, 17, 0, 0) },
-            //     new Screening { Id = 212, VideoId = 13, DateAndTime = new DateTime(2021, 9, 24, 19, 0, 0) },
-            //     new Screening { Id = 213, VideoId = 13, DateAndTime = new DateTime(2021, 9, 24, 21, 0, 0) },
-            //     new Screening { Id = 214, VideoId = 13, DateAndTime = new DateTime(2021, 9, 25, 17, 0, 0) },
-            //     new Screening { Id = 215, VideoId = 13, DateAndTime = new DateTime(2021, 9, 25, 19, 0, 0) },
-            //     new Screening { Id = 216, VideoId = 13, DateAndTime = new DateTime(2021, 9, 25, 21, 0, 0) },
-
-            //     new Screening { Id = 217, VideoId = 14, DateAndTime = new DateTime(2021, 9, 20, 19, 0, 0) },
-            //     new Screening { Id = 218, VideoId = 14, DateAndTime = new DateTime(2021, 9, 20, 21, 0, 0) },
-            //     new Screening { Id = 219, VideoId = 14, DateAndTime = new DateTime(2021, 9, 21, 17, 0, 0) },
-            //     new Screening { Id = 220, VideoId = 14, DateAndTime = new DateTime(2021, 9, 21, 19, 0, 0) },
-            //     new Screening { Id = 221, VideoId = 14, DateAndTime = new DateTime(2021, 9, 21, 21, 0, 0) },
-            //     new Screening { Id = 222, VideoId = 14, DateAndTime = new DateTime(2021, 9, 22, 17, 0, 0) },
-            //     new Screening { Id = 223, VideoId = 14, DateAndTime = new DateTime(2021, 9, 22, 19, 0, 0) },
-            //     new Screening { Id = 224, VideoId = 14, DateAndTime = new DateTime(2021, 9, 23, 21, 0, 0) },
-            //     new Screening { Id = 225, VideoId = 14, DateAndTime = new DateTime(2021, 9, 24, 17, 0, 0) },
-            //     new Screening { Id = 226, VideoId = 14, DateAndTime = new DateTime(2021, 9, 24, 19, 0, 0) },
-            //     new Screening { Id = 227, VideoId = 14, DateAndTime = new DateTime(2021, 9, 25, 19, 0, 0) },
-            //     new Screening { Id = 228, VideoId = 14, DateAndTime = new DateTime(2021, 9, 25, 21, 0, 0) },
-            //     new Screening { Id = 229, VideoId = 14, DateAndTime = new DateTime(2021, 9, 26, 17, 0, 0) },
-            //     new Screening { Id = 230, VideoId = 14, DateAndTime = new DateTime(2021, 9, 26, 19, 0, 0) },
-            //     new Screening { Id = 231, VideoId = 14, DateAndTime = new DateTime(2021, 9, 26, 21, 0, 0) },
-
-            //     new Screening { Id = 232, VideoId = 15, DateAndTime = new DateTime(2021, 9, 20, 17, 0, 0) },
-            //     new Screening { Id = 233, VideoId = 15, DateAndTime = new DateTime(2021, 9, 20, 19, 0, 0) },
-            //     new Screening { Id = 234, VideoId = 15, DateAndTime = new DateTime(2021, 9, 20, 21, 0, 0) },
-            //     new Screening { Id = 235, VideoId = 15, DateAndTime = new DateTime(2021, 9, 21, 17, 0, 0) },
-            //     new Screening { Id = 236, VideoId = 15, DateAndTime = new DateTime(2021, 9, 21, 19, 0, 0) },
-            //     new Screening { Id = 237, VideoId = 15, DateAndTime = new DateTime(2021, 9, 21, 21, 0, 0) },
-            //     new Screening { Id = 238, VideoId = 15, DateAndTime = new DateTime(2021, 9, 22, 17, 0, 0) },
-            //     new Screening { Id = 239, VideoId = 15, DateAndTime = new DateTime(2021, 9, 22, 19, 0, 0) },
-            //     new Screening { Id = 240, VideoId = 15, DateAndTime = new DateTime(2021, 9, 22, 21, 0, 0) },
-            //     new Screening { Id = 241, VideoId = 15, DateAndTime = new DateTime(2021, 9, 23, 17, 0, 0) },
-            //     new Screening { Id = 242, VideoId = 15, DateAndTime = new DateTime(2021, 9, 23, 19, 0, 0) },
-            //     new Screening { Id = 243, VideoId = 15, DateAndTime = new DateTime(2021, 9, 23, 21, 0, 0) },
-            //     new Screening { Id = 244, VideoId = 15, DateAndTime = new DateTime(2021, 9, 24, 17, 0, 0) },
-            //     new Screening { Id = 245, VideoId = 15, DateAndTime = new DateTime(2021, 9, 25, 21, 0, 0) },
-            //     new Screening { Id = 246, VideoId = 15, DateAndTime = new DateTime(2021, 9, 26, 17, 0, 0) },
-            //     new Screening { Id = 247, VideoId = 15, DateAndTime = new DateTime(2021, 9, 26, 19, 0, 0) },
-            //     new Screening { Id = 248, VideoId = 15, DateAndTime = new DateTime(2021, 9, 26, 21, 0, 0) }
-
-            //     );
 
             modelBuilder.Entity<TopTenMoviesByRatings>().HasNoKey().ToView("TopTenMoviesByRatings");
             modelBuilder.Entity<TopTenMoviesByScreenings>().HasNoKey().ToView("TopTenMoviesByScreenings");

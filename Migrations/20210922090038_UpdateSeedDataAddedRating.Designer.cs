@@ -4,14 +4,16 @@ using JAP_Task_Backend.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace JAP_Task_Backend.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210922090038_UpdateSeedDataAddedRating")]
+    partial class UpdateSeedDataAddedRating
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -102,13 +104,13 @@ namespace JAP_Task_Backend.Migrations
                         new
                         {
                             Id = 11,
-                            Score = 0,
+                            Score = 2,
                             VideoId = 6
                         },
                         new
                         {
                             Id = 12,
-                            Score = 0,
+                            Score = 3,
                             VideoId = 6
                         },
                         new
@@ -234,7 +236,7 @@ namespace JAP_Task_Backend.Migrations
                         new
                         {
                             Id = 63,
-                            Score = 0,
+                            Score = 4,
                             VideoId = 34
                         },
                         new
@@ -565,175 +567,19 @@ namespace JAP_Task_Backend.Migrations
                         {
                             Id = 118,
                             Score = 5,
-                            VideoId = 90
+                            VideoId = 92
                         },
                         new
                         {
                             Id = 119,
                             Score = 3,
-                            VideoId = 91
+                            VideoId = 92
                         },
                         new
                         {
                             Id = 120,
                             Score = 0,
-                            VideoId = 92
-                        },
-                        new
-                        {
-                            Id = 121,
-                            Score = 4,
-                            VideoId = 93
-                        },
-                        new
-                        {
-                            Id = 122,
-                            Score = 2,
                             VideoId = 94
-                        },
-                        new
-                        {
-                            Id = 123,
-                            Score = 3,
-                            VideoId = 95
-                        },
-                        new
-                        {
-                            Id = 124,
-                            Score = 5,
-                            VideoId = 96
-                        },
-                        new
-                        {
-                            Id = 125,
-                            Score = 4,
-                            VideoId = 97
-                        },
-                        new
-                        {
-                            Id = 126,
-                            Score = 1,
-                            VideoId = 98
-                        },
-                        new
-                        {
-                            Id = 127,
-                            Score = 2,
-                            VideoId = 99
-                        },
-                        new
-                        {
-                            Id = 128,
-                            Score = 5,
-                            VideoId = 100
-                        },
-                        new
-                        {
-                            Id = 129,
-                            Score = 3,
-                            VideoId = 101
-                        },
-                        new
-                        {
-                            Id = 130,
-                            Score = 5,
-                            VideoId = 102
-                        },
-                        new
-                        {
-                            Id = 131,
-                            Score = 3,
-                            VideoId = 103
-                        },
-                        new
-                        {
-                            Id = 132,
-                            Score = 0,
-                            VideoId = 104
-                        },
-                        new
-                        {
-                            Id = 133,
-                            Score = 0,
-                            VideoId = 105
-                        },
-                        new
-                        {
-                            Id = 134,
-                            Score = 3,
-                            VideoId = 106
-                        },
-                        new
-                        {
-                            Id = 135,
-                            Score = 5,
-                            VideoId = 107
-                        },
-                        new
-                        {
-                            Id = 136,
-                            Score = 3,
-                            VideoId = 108
-                        },
-                        new
-                        {
-                            Id = 137,
-                            Score = 0,
-                            VideoId = 109
-                        },
-                        new
-                        {
-                            Id = 138,
-                            Score = 0,
-                            VideoId = 110
-                        },
-                        new
-                        {
-                            Id = 139,
-                            Score = 0,
-                            VideoId = 111
-                        },
-                        new
-                        {
-                            Id = 140,
-                            Score = 0,
-                            VideoId = 112
-                        },
-                        new
-                        {
-                            Id = 141,
-                            Score = 3,
-                            VideoId = 113
-                        },
-                        new
-                        {
-                            Id = 142,
-                            Score = 5,
-                            VideoId = 114
-                        },
-                        new
-                        {
-                            Id = 143,
-                            Score = 3,
-                            VideoId = 115
-                        },
-                        new
-                        {
-                            Id = 144,
-                            Score = 0,
-                            VideoId = 46
-                        },
-                        new
-                        {
-                            Id = 145,
-                            Score = 0,
-                            VideoId = 47
-                        },
-                        new
-                        {
-                            Id = 146,
-                            Score = 0,
-                            VideoId = 45
                         },
                         new
                         {
