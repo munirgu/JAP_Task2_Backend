@@ -20,13 +20,10 @@ namespace JAP_Task_Backend.Database
         public DbSet<TopMoviesByMostSoldTickets> TopMoviesByMostSoldTickets { get; set; }
         public DbSet<Screening> Screenings { get; set; }
 
-
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             #region Videos Data
             modelBuilder.Entity<Video>().HasData(
-
                 /// Movies
                 new Video
                 {
@@ -1161,7 +1158,6 @@ namespace JAP_Task_Backend.Database
                 new VideoActor { Id = 28, Name = "Bryce Dallas Howard", VideoId = 14 },
                 new VideoActor { Id = 29, Name = "Tobey Maguire", VideoId = 15 },
                 new VideoActor { Id = 30, Name = "Kristen Dunst", VideoId = 15 },
-
                 new VideoActor { Id = 61, Name = "Tom Hanks", VideoId = 31 },
                 new VideoActor { Id = 62, Name = "Matt Damon", VideoId = 31 },
                 new VideoActor { Id = 63, Name = "Leonardo DiCaprio", VideoId = 32 },
@@ -1306,9 +1302,6 @@ namespace JAP_Task_Backend.Database
                 new VideoActor { Id = 203, Name = "Kristen Dunst", VideoId = 113 },
                 new VideoActor { Id = 204, Name = "Tobey Maguire", VideoId = 114 },
                 new VideoActor { Id = 205, Name = "Kristen Dunst", VideoId = 115 },
-
-
-
                 ///Tv Shows
                 new VideoActor { Id = 31, Name = "Zoe Kazan", VideoId = 16 },
                 new VideoActor { Id = 32, Name = "Betty Gabriel", VideoId = 16 },
@@ -1340,12 +1333,8 @@ namespace JAP_Task_Backend.Database
                 new VideoActor { Id = 58, Name = "Omar Epps", VideoId = 29 },
                 new VideoActor { Id = 59, Name = "Taylor Kitsch", VideoId = 30 },
                 new VideoActor { Id = 60, Name = "Michael C. Hall", VideoId = 30 }
-
-
-
             );
             #endregion
-
             /// Rating for every movie and Tv Show
             #region VideosActors Data
             modelBuilder.Entity<Rating>().HasData(
@@ -1427,7 +1416,6 @@ namespace JAP_Task_Backend.Database
                 new Rating { Id = 106, Score = 2, VideoId = 78 },
                 new Rating { Id = 107, Score = 5, VideoId = 79 },
                 new Rating { Id = 108, Score = 3, VideoId = 80 },
-
                 new Rating { Id = 109, Score = 4, VideoId = 81 },
                 new Rating { Id = 110, Score = 2, VideoId = 82 },
                 new Rating { Id = 111, Score = 3, VideoId = 83 },
@@ -1466,7 +1454,6 @@ namespace JAP_Task_Backend.Database
                 new Rating { Id = 144, Score = 0, VideoId = 46 },
                 new Rating { Id = 145, Score = 0, VideoId = 47 },
                 new Rating { Id = 146, Score = 0, VideoId = 45 },
-              
                 ///TvShows Rating
                 new Rating { Id = 31, Score = 4, VideoId = 16 },
                 new Rating { Id = 32, Score = 2, VideoId = 16 },
@@ -1498,10 +1485,8 @@ namespace JAP_Task_Backend.Database
                 new Rating { Id = 58, Score = 4, VideoId = 29 },
                 new Rating { Id = 59, Score = 3, VideoId = 30 },
                 new Rating { Id = 60, Score = 3, VideoId = 30 }
-
             );
             #endregion
-
             modelBuilder.Entity<TopTenMoviesByRatings>().HasNoKey().ToView("TopTenMoviesByRatings");
             modelBuilder.Entity<TopTenMoviesByScreenings>().HasNoKey().ToView("TopTenMoviesByScreenings");
             modelBuilder.Entity<TopMoviesByMostSoldTickets>().HasNoKey().ToView("TopMoviesByMostSoldTickets");

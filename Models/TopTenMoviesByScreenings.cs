@@ -10,6 +10,5 @@ namespace JAP_Task_Backend.Models
         public int Id { get; set; }
         public string Title { get; set; }
         public int ScreeningsCount { get; set; }
-
     }
 }

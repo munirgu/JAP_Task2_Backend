@@ -34,9 +34,6 @@ namespace JAP_Task_Backend.Controllers
             return Ok(_videoService.GetTopTenVideos(VideoType.TvShow, currentPage));
         }
 
-
-
-
         [HttpGet("search-movie-videos")]
         public IActionResult SearchMovies(string quickSearch)
         {
@@ -49,8 +46,6 @@ namespace JAP_Task_Backend.Controllers
             return Ok(_videoService.SearchMovies(VideoType.TvShow, quickSearch));
         }
         
-
-
         [HttpPost("rate-video")]
         public IActionResult RateVideo(int id, int score)
         {
@@ -82,7 +77,6 @@ namespace JAP_Task_Backend.Controllers
         {
             return Ok(_videoService.GetTopMoviesByMostSoldTickets());
         }
-
 
         [HttpPost("insert-screening-data")]
         public IActionResult InsertScreeningData()

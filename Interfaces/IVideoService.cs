@@ -14,12 +14,10 @@ namespace JAP_Task_Backend.Interfaces
         List<VideoDto> SearchMovies(VideoType videoType,string quickSearch);
         void RateVideo(int id, int score);
         void BuyTicket(int screeningId, int numberOfTickets);
-
         // Procedures
         List<TopTenMoviesByRatings> GetTopTenMoviesByRatings();
         List<TopTenMoviesByScreenings> GetTopTenMoviesByScreenings(DateTime startDate, DateTime endDate);
         List<TopMoviesByMostSoldTickets> GetTopMoviesByMostSoldTickets();
-
         // Test data
         void InsertScreeningData();
     }

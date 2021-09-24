@@ -15,9 +15,7 @@ namespace JAP_Task_Backend.Services
     {
         private readonly ApplicationDbContext _context;
         private const int pageSize = 10;
-
         private readonly Random _random = new Random();
-
         public VideoService(ApplicationDbContext context)
         {
             _context = context;
@@ -50,7 +48,6 @@ namespace JAP_Task_Backend.Services
         public List<VideoDto> SearchMovies(VideoType videoType, string quickSearch)
         {
             List<VideoDto> videos = new List<VideoDto>();
-
             // at least X stars
             if (quickSearch.ToLower().StartsWith("at least ") && quickSearch.ToLower().EndsWith(" stars"))
             {
@@ -94,7 +91,6 @@ namespace JAP_Task_Backend.Services
 
             return videos;
         }
-
         private List<VideoDto> SearchByTitleAndDescription(VideoType videoType, string quickSearch)
         {
             return _context.Videos
@@ -153,7 +149,6 @@ namespace JAP_Task_Backend.Services
         }
         private List<VideoDto> SearchByAfterYear(VideoType videoType, int year)
         {
-            
             return _context.Videos
                         .Where(w => w.Type == videoType &&
                                     w.ReleaseDate.Year > year)
@@ -200,7 +195,6 @@ namespace JAP_Task_Backend.Services
             _context.Ratings.Add(rating);
             _context.SaveChanges();
         }
-
         public void BuyTicket(int screeningId, int numberOfTickets)
         {
             var screening = _context.Screenings.FirstOrDefault(x => x.Id == screeningId);
@@ -223,7 +217,6 @@ namespace JAP_Task_Backend.Services
             screening.SoldTickets = screening.SoldTickets + numberOfTickets;
             _context.SaveChanges();
         }
-
         public List<TopTenMoviesByRatings> GetTopTenMoviesByRatings()
         {
             List<TopTenMoviesByRatings> result = _context.TopTenMoviesByRatings
@@ -232,7 +225,6 @@ namespace JAP_Task_Backend.Services
 
             return result;
         }
-
         public List<TopTenMoviesByScreenings> GetTopTenMoviesByScreenings(DateTime startDate, DateTime endDate)
         {
             List<TopTenMoviesByScreenings> result = _context.TopTenMoviesByScreenings
@@ -241,7 +233,6 @@ namespace JAP_Task_Backend.Services
 
             return result;
         }
-
         public List<TopMoviesByMostSoldTickets> GetTopMoviesByMostSoldTickets()
         {
             List<TopMoviesByMostSoldTickets> result = _context.TopMoviesByMostSoldTickets
@@ -284,6 +275,4 @@ namespace JAP_Task_Backend.Services
             _context.SaveChanges();
         }
     }
-
-
 }
