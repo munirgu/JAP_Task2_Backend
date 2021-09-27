@@ -6,7 +6,8 @@ Also you can find testing of these methods in JAP_Task2.Test folder.
 In order to run this you should do the following: 
 
 First clone JAP_Task2_Backend repository
-make sure SQL server is active and that you have database called "MovieApp".
+Make sure you change the name of the database in  appsettings.json and changing the ConnectionStrings' DefaultConnection value. 
+make sure SQL server is active and that you have database called "MovieApp2".
 In your Visual Studio run dotnet ef database update
 Before you start playing with this application first you should insert the data for the screenings on the Swagger. For the first time this should be done because there is a method which is adding screenings once it is called.
 In order to run the tests you should have installed NUnit3TestAdapter, NUnit, Moq, Microsoft.NET.Test.Sdk and Microsoft.EntityFrameworkCore.InMemory. 
